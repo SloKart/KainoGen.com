@@ -1,0 +1,474 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1400 {
+    padding: var(--sectionPadding);
+    /* 190px - 268px */
+    padding-top: clamp(11.875rem, 25vw, 16.75rem);
+    padding-bottom: 6.25rem;
+    position: relative;
+    z-index: 1;
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+  }
+  #banner-1400 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* 8px - 12px */
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+  #banner-1400 .cs-int-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  #banner-1400 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1400 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--bodyTextColorWhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #banner-1400 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #banner-1400 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-1400 .cs-link:after {
+    /* chevron */
+    content: "";
+    width: 0.4375rem;
+    height: 0.75rem;
+    margin: 0 1rem;
+    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+  }
+  #banner-1400 .cs-link.cs-active {
+    color: var(--primary);
+  }
+  #banner-1400 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #banner-1400 .cs-background:before {
+    /* gradient overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-1400 .cs-background:after {
+    /* gradient overlay */
+    content: "";
+    width: 100%;
+    height: 40%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #banner-1400 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #banner-1400 .cs-background:before {
+    width: 50%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(left, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 0rem) {
+  #banner-712 .cs-background:before {
+    opacity: 0.75;
+    background: linear-gradient(180.01deg, #5a7663 16.86%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+/*-- -------------------------- -->
+<---       Contact Form         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  @keyframes scaleFade {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.7);
+      opacity: 0;
+    }
+  }
+  #cs-contact-549 {
+    width: 100%;
+    padding: var(--sectionPadding);
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--bodyTextColorWhite);
+    z-index: 1;
+  }
+  #cs-contact-549 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+  }
+  #cs-contact-549 .cs-content {
+    /* set text aling to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #cs-contact-549 .cs-background {
+    width: 100%;
+    height: 19.5rem;
+    display: block;
+    position: relative;
+  }
+  #cs-contact-549 .cs-background:before {
+    /* yellow dot */
+    content: "";
+    width: 1.125rem;
+    height: 1.125rem;
+    background: var(--secondary);
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  #cs-contact-549 .cs-background:after {
+    /* yellow animated ring */
+    content: "";
+    width: 1.125rem;
+    height: 1.125rem;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10;
+    transition: transform 0.4s, opacity 0.4s;
+    animation-name: scaleFade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #cs-contact-549 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cs-contact-549 #cs-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #cs-contact-549 #cs-form .cs-left-section {
+    width: 50%;
+    min-width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 5px;
+  }
+  #cs-contact-549 #cs-form .cs-right-section {
+    width: 50%;
+    min-width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5px;
+  }
+  #cs-contact-549 #cs-form .custom-dropdown {
+    align-self: center;
+    width: 100%;
+  }
+  #cs-contact-549 #cs-form .cs-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: menulist-button;
+    background-color: var(--);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  #cs-contact-549 #cs-form .cs-input:focus {
+    outline: none;
+    border-color: var(--secondary);
+  }
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #cs-contact-549 #cs-form .cs-input option {
+    animation: slideDown 0.5s ease;
+  }
+  #cs-contact-549 #cs-form .cs-input option[value=""][disabled] {
+    display: none;
+  }
+  #cs-contact-549 #cs-form .cs-input option[selected] {
+    font-weight: bold;
+  }
+  #cs-contact-549 #cs-form .cs-slider-label[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #d3d3d3;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+  }
+  #cs-contact-549 .cs-label {
+    margin-top: 0.7rem;
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.0625rem;
+    position: relative;
+  }
+  #cs-contact-549 .cs-input,
+  #cs-contact-549 .cs-textarea,
+  #cs-contact-549 select,
+  #cs-contact-549 .cs-select {
+    /* added options for the select tag in case you add it, that way it will also have the same styles, add the cs-select class for better specificity when targeting it */
+    /* 16px - 20px */
+    background-color: var(--primaryLight);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-family: inherit;
+    margin: 0;
+    /* 24px - 40px */
+    padding: 0 clamp(1rem, 5vw, 2rem) 0;
+    width: 100%;
+    /* 70px - 90px */
+    height: clamp(4.375rem, 7vw, 5.625rem);
+    background-color: #f1f1f4;
+    /* prevents border and padding from affecting height and width */
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    display: block;
+    position: relative;
+    transition: border-color 0.3s;
+  }
+  #cs-contact-549 .cs-input:hover, #cs-contact-549 .cs-input:focus,
+  #cs-contact-549 .cs-textarea:hover,
+  #cs-contact-549 .cs-textarea:focus,
+  #cs-contact-549 select:hover,
+  #cs-contact-549 select:focus,
+  #cs-contact-549 .cs-select:hover,
+  #cs-contact-549 .cs-select:focus {
+    /* focus has a black outline, we override it here */
+    outline: none;
+    border-color: var(--primaryLight);
+  }
+  #cs-contact-549 .cs-textarea {
+    width: 100%;
+    margin: 0;
+    padding-top: 1rem;
+    /* changes at tablet */
+    min-height: 12.5rem;
+  }
+  #cs-contact-549 .cs-icon {
+    width: 1.875rem;
+    height: auto;
+    position: absolute;
+    /* 24px - 40px, matches the padding left and right of input */
+    right: clamp(1.5rem, 5vw, 2.5rem);
+    /* these two center the icon inside the label */
+    bottom: 50%;
+    transform: translateY(115%);
+  }
+  #cs-contact-549 .cs-submit {
+    align-self: flex-end;
+    /* Ensure the button takes up the full width of the container */
+    width: 100%;
+    /* Adjust based on the desired maximum width */
+    max-width: 748px;
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    /* 56px - 84px */
+    line-height: clamp(3.5rem, 6.5vw, 5.25rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    /* 28px - 44px, minus the gap value. Should be 48px - 64px, but with a 20px gap on the flexbox, we account for that space when adding our margin top value so its 48px - 64px */
+    margin: clamp(1.75rem, 6vw, 2.75rem) auto 0;
+    color: #1a1a1a;
+    border: none;
+    /* 150px - 234px */
+    min-width: clamp(9.374rem, 18vw, 14.625rem);
+    padding: 0 1.5rem;
+    background-color: var(--primaryLight);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+  }
+  #cs-contact-549 .cs-submit:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #cs-contact-549 .cs-submit:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  #cs-contact-549 .cs-submit:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cs-contact-549 .cs-background {
+    /* 310px - 568px */
+    height: clamp(19.375rem, 43vw, 35.5rem);
+  }
+  #cs-contact-549 .cs-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #cs-contact-549 .cs-label {
+    max-height: 25rem;
+    width: 95%;
+  }
+  #cs-contact-549 .cs-textarea-label {
+    width: 100%;
+  }
+  #cs-contact-549 .cs-textarea {
+    /* 280px - 358px */
+    min-height: clamp(10.5rem, 20vw, 20.375rem);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode main {
+    background-color: var(--dark);
+  }
+  body.dark-mode #cs-contact-549 {
+    background-color: var(--medium);
+  }
+  body.dark-mode #cs-contact-549 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #cs-contact-549 .cs-title,
+  body.dark-mode #cs-contact-549 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-contact-549 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #cs-contact-549 .cs-label {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-contact-549 .cs-input,
+  body.dark-mode #cs-contact-549 .cs-textarea {
+    background-color: var(dimgrey);
+    color: var(--medium);
+  }
+  body.dark-mode #cs-contact-549 .cs-input::placeholder,
+  body.dark-mode #cs-contact-549 .cs-textarea::placeholder {
+    color: var(--accent);
+    opacity: 0.5;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

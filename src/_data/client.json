@@ -1,21 +1,21 @@
 {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-123-4567",
-    "phoneFormatted": "(555) 123-4567",
-    "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
-    },
-    "social": {
-        "facebook": "https://www.facebook.com/",
-        "twitter": "https://twitter.com/",
-        "instagram": "https://www.instagram.com/",
-        "youtube": "https://www.youtube.com/"
-    },
-    "domain": "https://www.codestitch.app"
+  "name": "KainoGen",
+  "email": "jason@kainogen.com",
+  "phoneForTel": "555-123-4567",
+  "phoneFormatted": "(555) 123-4567",
+  "address": {
+    "lineOne": "Located in ",
+    "lineTwo": "Beautiful",
+    "city": "Cleveland",
+    "state": "OH",
+    "zip": "44130",
+    "mapLink": "https://maps.app.goo.gl/rWGiWeYpMmZiELrH8"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/profile.php?id=61556736446753",
+    "twitter": "https://twitter.com/",
+    "instagram": "https://www.instagram.com/",
+    "youtube": "https://www.youtube.com/"
+  },
+  "domain": "https://www.KainoGen.com"
 }

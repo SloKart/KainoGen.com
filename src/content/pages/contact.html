@@ -1,0 +1,201 @@
+---
+title: "Contact"
+description: "Contact us"
+permalink: "contact/"
+eleventyNavigation:
+  key: "Contact"
+  order: "1400"
+---
+
+{% extends 'layouts/base.html' %} {% block head %}
+<link rel="stylesheet" href="/assets/css/contact.css" />
+
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+  <div class="cs-container">
+    <span class="cs-int-title">Contact Us</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/services" class="cs-link cs-active">Contact</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="../../assets/images/images/cleveland-skyline-horizontal.jpg" />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="../../assets/images/images/cleveland-skyline-horizontal.jpg" />
+    <img
+      decoding="async"
+      src="../../assets/images/images/cleveland-skyline-horizontal.jpg"
+      alt="people laughing"
+      width="1280"
+      height="568"
+      aria-hidden="true" />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Contact Form Top             -->
+<!-- ============================================ -->
+
+<section id="cs-contact-549">
+  <div class="cs-container">
+    <!--Swap the image out for a screenshot of the Google Map location for your client, or you can add the embedded iframe from google and add the cs-background class to it and it should work, remove the animated dots in the CSS if you do that-->
+    <picture class="cs-background">
+      <!--Mobile Image-->
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/images/cleveland.png" />
+      <!--Tablet and above Image-->
+      <source
+        media="(min-width: 601px)"
+        srcset="/assets/images/cleveland.png" />
+      <img
+        loading="lazy"
+        decoding="async"
+        src="/assets/images/cleveland.png"
+        alt="appliance"
+        width="1150"
+        height="1150"
+        aria-hidden="true" />
+    </picture>
+    <div class="cs-content">
+      <span class="cs-topper">Contact Us</span>
+      <h2 class="cs-title">Get in Touch</h2>
+      <p class="cs-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus
+        elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices
+        odio pulvinar. Sed ut.
+      </p>
+    </div>
+  </div>
+  <br />
+
+  <!-- ============================================ -->
+  <!--                form section                 -->
+  <!-- ============================================ -->
+
+  <form id="cs-form" name="Contact Form" method="post">
+    <div class="cs-left-section">
+      <label class="cs-label">
+        Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-240"
+          name="name"
+          placeholder="Name" />
+      </label>
+      <label class="cs-label">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="email-240"
+          name="email"
+          placeholder="Email" />
+      </label>
+      <label class="cs-label">
+        Phone
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="phone-240"
+          name="phone"
+          placeholder="Phone" />
+      </label>
+      <label class="cs-label">
+        How Did You Find Us
+        <input
+          class="cs-input"
+          type="text"
+          id="find-240"
+          name="find-us"
+          placeholder="How did you find us?" />
+      </label>
+      <label class="cs-label cs-label-message">
+        Message
+        <textarea
+          class="cs-input cs-textarea"
+          required
+          name="Message"
+          id="message-240"
+          placeholder="Write message..."></textarea>
+      </label>
+    </div>
+    <div class="cs-right-section">
+      <label class="cs-label">
+        Company Name (if applicable)
+        <input
+          class="cs-input"
+          type="text"
+          id="business-name"
+          name="business-name"
+          placeholder="Company Name (if applicable)" />
+      </label>
+      <label class="cs-label">
+        Preferred Contact Method (Optional)
+        <div class="custom-dropdown">
+          <select class="cs-input" id="contact-method" name="contact-method">
+            <option value="" disabled selected>Select Contact Method</option>
+            <option value="basic">Phone</option>
+            <option value="standard">Email</option>
+            <option value="premium">Text</option>
+            <option value="other">Other - Please Specify below</option>
+          </select>
+        </div>
+      </label>
+      <label class="cs-label">
+        Preferred Contact time (Optional)
+        <div class="custom-dropdown">
+          <select class="cs-input" id="contact-time" name="contact-time">
+            <option value="" disabled selected>Preferred contact time</option>
+            <option value="morning">Mornings</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            <option value="other">Other - Please Specify below</option>
+          </select>
+        </div>
+      </label>
+      <label class="cs-label">
+        Package (Optional)
+        <div class="custom-dropdown">
+          <select class="cs-input" id="package" name="package">
+            <option value="" disabled selected>Select Package</option>
+            <option value="basic">Basic Package</option>
+            <option value="standard">Standard Package</option>
+            <option value="premium">Premium Package</option>
+            <option value="other">Other</option>
+          </select>
+          <!-- <i class="fas fa-chevron-down"></i>  Font Awesome icon for dropdown arrow -->
+        </div>
+      </label>
+      <label class="cs-label cs-label-message">
+        Business / Website Details (Optional)
+        <textarea
+          class="cs-input cs-textarea"
+          name="Message"
+          id="message-right"
+          placeholder="Briefly describe your business. 
+What products or services do you offer? Do you have a preferred color scheme or branding guidelines?
+Are there any websites you admire or wish to emulate? "></textarea>
+      </label>
+    </div>
+    <button class="cs-button-solid cs-submit" type="submit">Submit</button>
+  </form>
+</section>
+
+{% endblock %}

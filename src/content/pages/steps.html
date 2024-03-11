@@ -1,0 +1,169 @@
+---
+title: "Steps"
+description: "What steps we take to build your website"
+permalink: "steps/"
+eleventyNavigation:
+  key: "steps"
+  order: "200"
+  parent: "About"
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/steps.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1402">
+  <div class="cs-container">
+    <span class="cs-int-title">Who we are</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a class="cs-link">About</a>
+      <a href="/about" class="cs-link cs-active">Steps</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="../../assets/images/images/lightbulb.jpg" />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="../../assets/images/images/lightbulb.jpg" />
+    <img
+      decoding="async"
+      src="../../assets/images/images/lightbulb.jpg"
+      alt="people laughing"
+      width="1280"
+      height="568"
+      aria-hidden="true" />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-284">
+  <div class="cs-container">
+    <!-- Left Section -->
+    <div class="cs-content">
+      <span class="cs-topper">Step by Step</span>
+      <h2 class="cs-title">Our Process from Start to Finish</h2>
+      <p class="cs-text">What steps we take to build your website</p>
+    </div>
+    <!-- Right Section -->
+    <ul class="cs-right-section">
+      <li class="cs-item">
+        <span class="cs-number">01</span>
+        <p class="cs-item-text">
+          <strong>Contact us</strong> Let us know what you're looking for and
+          what questions you have.
+        </p>
+      </li>
+
+      <li class="cs-item">
+        <span class="cs-number">02</span>
+        <p class="cs-item-text">
+          <strong>Let's chat</strong> We'll meet up either in person or online
+          and create a plan together for your project. If you like it, we'll
+          sign you up and give you some homework.
+        </p>
+      </li>
+
+      <li class="cs-item">
+        <span class="cs-number">03</span>
+        <p class="cs-item-text">
+          <strong>Do your homework</strong> Don't worry, we won't be grading it.
+          So have some fun. Take a few pictures, or a video. Write some content
+          for us base our copywriting and SEO optimization off off.
+        </p>
+      </li>
+
+      <li class="cs-item">
+        <span class="cs-number">04</span>
+        <p class="cs-item-text">
+          <strong>Working Together</strong> We want you to stand out in the
+          crowd. Send us any photos, logos, or other design elements you would
+          like use or be inspired by.
+        </p>
+      </li>
+
+      <li class="cs-item">
+        <span class="cs-number">05</span>
+        <p class="cs-item-text">
+          <strong>Bring your ideas to life</strong> We'll Design your unique
+          website and create content that will make you stand out to customers
+          and search engines.
+        </p>
+      </li>
+
+      <li class="cs-item">
+        <span class="cs-number">06</span>
+        <p class="cs-item-text">
+          <strong>Making sure your happy </strong> We'll review your design
+          draft with you and make any adjustments you may want.
+        </p>
+      </li>
+
+      <li class="cs-item">
+        <span class="cs-number">07</span>
+        <p class="cs-item-text">
+          <strong>Writing the code </strong> We'll begin coding and testing your
+          website.
+        </p>
+      </li>
+
+      <li class="cs-item">
+        <span class="cs-number">08</span>
+        <p class="cs-item-text">
+          <strong>Deploy</strong> Your new website is live on the internet for
+          the whole world see. Congratulations, you did it.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1071">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex">
+        <span class="cs-topper">Get Started</span>
+        <h2 class="cs-title">Ready to get started</h2>
+      </div>
+      <div class="cs-button-box">
+        <a href="" class="cs-button-solid">See Our Services</a>
+        <a href="" class="cs-button-transparent">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="../../assets/images/images/computer-close-up.jpg" />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="../../assets/images/images/computer-close-up.jpg" />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="../../assets/images/images/computer-close-up.jpg"
+      alt="mechanic"
+      width="1280"
+      height="568" />
+  </picture>
+</section>
+
+{% endblock %}

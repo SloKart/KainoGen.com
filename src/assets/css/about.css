@@ -1,0 +1,487 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1402 {
+    padding: var(--sectionPadding);
+    padding-top: 16.875rem;
+    padding-bottom: 6.25rem;
+    position: relative;
+    z-index: 1;
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+  }
+  #banner-1402 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* 8px - 12px */
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+  #banner-1402 .cs-int-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  #banner-1402 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1402 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--bodyTextColorWhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #banner-1402 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #banner-1402 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-1402 .cs-link:after {
+    /* chevron */
+    content: "";
+    width: 0.4375rem;
+    height: 0.75rem;
+    margin: 0 1rem;
+    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+  }
+  #banner-1402 .cs-link.cs-active {
+    color: var(--primary);
+  }
+  #banner-1402 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #banner-1402 .cs-background:before {
+    /* gradient overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-1402 .cs-background:after {
+    /* gradient overlay */
+    content: "";
+    width: 100%;
+    height: 40%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #banner-1402 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1402 .cs-background:before {
+    width: 50%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(left, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-523 {
+    padding: var(--sectionPadding);
+  }
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.6em);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes floatAnimation2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1em);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #sbs-523 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #sbs-523 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbs-523 .cs-color {
+    color: var(--secondary);
+  }
+  #sbs-523 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-523 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-523 .cs-image-group {
+    /* this is how we can scale entire groups using ems.  Font size is tied to the view width, so as the screen gets bigger, so does the font size, and this scales up and down the elements with em values.  Then it stops growing once the font size reaches the defined value of 1em (16px which is default on the html element). Font size changes at desktop */
+    font-size: min(2.3vw, 0.875em);
+    /* all values are done in ems, not rems, so we can scale the group with a font size min/max equation */
+    width: 39.375em;
+    height: 51.0625em;
+    /* pushes it to the top in the first position */
+    order: -1;
+    position: relative;
+  }
+  #sbs-523 .cs-image-group:before {
+    content: "";
+    width: 11.625em;
+    height: 10.0625em;
+    background: var(--primary);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    animation-name: floatAnimation;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+  #sbs-523 .cs-picture {
+    display: block;
+    position: absolute;
+  }
+  #sbs-523 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #sbs-523 .cs-picture-large {
+    width: 29.75em;
+    height: 42.3125em;
+    top: 4.375em;
+    left: 3.875em;
+  }
+  #sbs-523 .cs-picture-small {
+    width: 16.25em;
+    height: 14.0625em;
+    background-color: #fff;
+    border: 0.625em solid #fff;
+    right: 0;
+    bottom: 0;
+    animation-name: floatAnimation2;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-523 .cs-container {
+    display: flex;
+    max-width: 80rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #sbs-523 .cs-content {
+    width: 51%;
+    max-width: 34.375rem;
+  }
+  #sbs-523 .cs-image-group {
+    font-size: min(1.1vw, 1em);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-523 .cs-title,
+  body.dark-mode #sbs-523 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-523 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-523 .cs-image-group:before {
+    background-color: var(--secondary);
+    opacity: 0.3;
+  }
+  body.dark-mode #sbs-523 .cs-picture-small {
+    border-color: var(--dark);
+  }
+}
+/*-- -------------------------- -->
+<---       Why Choose Us        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-682 {
+    padding: var(--sectionPadding);
+  }
+  #why-choose-682 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #why-choose-682 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #why-choose-682 .cs-color {
+    color: var(--primary);
+  }
+  #why-choose-682 .cs-text {
+    margin-bottom: 16/16rem;
+  }
+  #why-choose-682 .cs-text:last-of-type {
+    margin-bottom: 32/16rem;
+  }
+  #why-choose-682 .cs-ul {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  #why-choose-682 .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #why-choose-682 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #why-choose-682 .cs-icon {
+    width: 1.0625rem;
+    height: auto;
+    margin-top: 0.25rem;
+  }
+  #why-choose-682 .cs-text {
+    color: var(--dark);
+  }
+  #why-choose-682 .cs-item-text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #why-choose-682 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #why-choose-682 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #why-choose-682 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #why-choose-682 .cs-image-group {
+    /* everything inside the image group is in ems so the font size will scale them down.  Font size minimum is tied to view width size, and grows until it reaches 75% of the value on em */
+    font-size: min(2.3vw, 0.75em);
+    width: 39.5em;
+    height: 51.25em;
+    position: relative;
+    z-index: 1;
+    /* flips it horizontally */
+    transform: scaleX(-1);
+  }
+  #why-choose-682 .cs-picture {
+    width: 19.125em;
+    height: 22.5em;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+  }
+  #why-choose-682 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* so the images are the original orientation, undoing the flip the cs-image-group is doing */
+    transform: scaleX(-1);
+  }
+  #why-choose-682 .cs-picture1 {
+    top: 5em;
+    left: 0;
+  }
+  #why-choose-682 .cs-picture2 {
+    top: 0;
+    right: 0;
+  }
+  #why-choose-682 .cs-picture3 {
+    bottom: 0;
+    left: 0;
+  }
+  #why-choose-682 .cs-picture4 {
+    bottom: 5em;
+    right: 0;
+  }
+  #why-choose-682 .cs-graphic {
+    display: none;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #why-choose-682 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #why-choose-682 .cs-image-group {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #why-choose-682 .cs-graphic {
+    width: 61.4375em;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 10.3125em;
+    right: -2em;
+    z-index: -1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #why-choose-682 .cs-topper .cs-color {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #why-choose-682 .cs-title,
+  body.dark-mode #why-choose-682 .cs-text,
+  body.dark-mode #why-choose-682 .cs-h3,
+  body.dark-mode #why-choose-682 .cs-item-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #why-choose-682 .cs-text,
+  body.dark-mode #why-choose-682 .cs-item-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #why-choose-682 .cs-icon {
+    filter: brightness(125%);
+  }
+  body.dark-mode #why-choose-682 .cs-graphic {
+    opacity: 0.5;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

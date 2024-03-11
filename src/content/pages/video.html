@@ -1,0 +1,272 @@
+---
+title: "Lighthouse"
+description: "How to use google lighthouse"
+permalink: "video/"
+eleventyNavigation:
+  key: "Lighthouse"
+  order: "300"
+  parent: "About"
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="../../assets/css/video.css" />
+<script src="../../assets/js/scrollBox.js" defer></script>
+
+{% endblock %} {% block body %}<!DOCTYPE html>
+
+<div id="banner-1402">
+  <div class="cs-container">
+    <span class="cs-int-title">Who we are</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a class="cs-link">About</a>
+      <a href="/lighthouse" class="cs-link cs-active">Google Lighthouse</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="../../assets/images/images/lighthouse.webp" />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="../../assets/images/images/lighthouse.webp" />
+    <img
+      decoding="async"
+      src="../../assets/images/images/lighthouse.webp"
+      alt="people laughing"
+      width="1280"
+      height="568"
+      aria-hidden="true" />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-889">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">
+        Here is something most web developers would never want you to know
+      </span>
+      <h1 class="cs-title">How to check our work</h1>
+      <p class="cs-text">
+        We are proud of our ability to maximize the performance that Google uses
+        to decide which websites to link to customers.
+      </p>
+    </div>
+  </div>
+
+  <div class="cs-content">
+    <p class="cs-text">Go to Google's Online</p>
+    <a class="cs-link" href="https://pagespeed.web.dev">
+      <button class="cs-button-solid">Page Speed Test</button>
+    </a>
+    <p class="cs-text">and enter the URL of any website you'd like to test</p>
+  </div>
+  <h2 class="cs-h2">If you prefer to run the test yourself:</h2>
+
+
+<div id="scrollBox">
+  <div class="cs-content">
+    <ul class="cs-card-group scrollBox">
+      <li class="cs-item card">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg"
+            alt="icon"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true" />
+        </picture>
+        <h3 class="cs-h3">
+          from a desktop <br />
+          Download Google Chrome
+        </h3>
+        <p class="cs-item-p">
+          If you already are using Google Chrome you can skip this step.
+          otherwise you can download it
+          <a
+            href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjR1-Gq-7qEAxXfbn8AHcUvCQsYABAAGgJvYQ&ase=2&gclid=CjwKCAiAuNGuBhAkEiwAGId4amTOIvCKXCeD8UANMfy3VZKHSNfX3keCXLHwvrwVgfn_SlNMNATp2RoCn30QAvD_BwE&ohost=www.google.com&cid=CAESVeD2VASpQ8YxncBYr_kLmO9gZjQ-7g4dzBLjO4ByOUlK_C4s3MVcbz9Sr-TXxtJ571ViVKzEzA3NrmWwDfQ6VDmEvnQOJV-YCI_YZiIvm-rrBnOUVXQ&sig=AOD64_14OvZR77IinzG8ijO2UhKeTPjtYQ&q&nis=4&adurl&ved=2ahUKEwij1tiq-7qEAxXO3skDHfGGCVgQ0Qx6BAgJEAE"
+            >here</a
+          >
+        </p>
+      </li>
+      <!--Arrow-->
+      <li class="cs-item cs-arrow" aria-hidden="true">
+        <img
+          data-img2picture-ignore="true"
+          class="cs-arrow-img"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg"
+          alt="icon"
+          width="80"
+          height="76"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true" />
+      </li>
+      <li class="cs-item card">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg"
+            alt="icon"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true" />
+        </picture>
+        <h3 class="cs-h3">go to webpage you want to audit</h3>
+        <p class="cs-item-p">
+          The homepage is usually the best place to start.
+        </p>
+      </li>
+      <!--Arrow-->
+      <li class="cs-item cs-arrow" aria-hidden="true">
+        <img
+          data-img2picture-ignore="true"
+          class="cs-arrow-img"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg"
+          alt="icon"
+          width="80"
+          height="76"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true" />
+      </li>
+      <li class="cs-item card">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg"
+            alt="icon"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true" />
+        </picture>
+        <h3 class="cs-h3">right click</h3>
+        <p class="cs-item-p">and select inspect.</p>
+      </li>
+      <!--Arrow-->
+      <li class="cs-item cs-arrow" aria-hidden="true">
+        <img
+          data-img2picture-ignore="true"
+          class="cs-arrow-img"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg"
+          alt="icon"
+          width="80"
+          height="76"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true" />
+      </li>
+      <li class="cs-item card">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg"
+            alt="icon"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true" />
+        </picture>
+        <h3 class="cs-h3">click "lighthouse"</h3>
+        <p class="cs-item-p">
+          it is usually in the upper right corner and may be behind a drop down
+          arrow.
+        </p>
+      </li>
+      <!--Arrow-->
+      <li class="cs-item cs-arrow" aria-hidden="true">
+        <img
+          data-img2picture-ignore="true"
+          class="cs-arrow-img"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg"
+          alt="icon"
+          width="80"
+          height="76"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true" />
+      </li>
+      <li class="cs-item card">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg"
+            alt="icon"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true" />
+        </picture>
+        <h3 class="cs-h3">Make sure you are on the right page</h3>
+        <p class="cs-item-p">
+          you can still edit the web address at the top of the screen to go to
+          the home page.
+        </p>
+      </li>
+      <!--Arrow-->
+      <li class="cs-item cs-arrow" aria-hidden="true">
+        <img
+          data-img2picture-ignore="true"
+          class="cs-arrow-img"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg"
+          alt="icon"
+          width="80"
+          height="76"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true" />
+      </li>
+      <li class="cs-item card">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg"
+            alt="icon"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true" />
+        </picture>
+        <h3 class="cs-h3">click "Analyze Page Load"</h3>
+        <p class="cs-item-p">
+          in a few moments, you will see how good google thinks a website is.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div>
+</section>
+
+<section id="video" class="video">
+  <div class="cs-content">
+    <h2 class="cs-h2">If you would prefer a video guide</h2>
+    <iframe
+      loading="lazy"
+      class="video"
+      src="https://www.youtube.com/embed/VyaHwvPWuZU?start=70&amp;end=95&rel=0&showinfo=0"
+      title="What Is Google Lighthouse and How to Use It?"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+    </iframe>
+
+    <a href="/"><button class="cs-button-solid">Back</button></a>
+  </div>
+</section>
+
+{% endblock %}

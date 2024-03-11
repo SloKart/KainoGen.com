@@ -1,48 +1,64 @@
 ---
 title: "Menu"
 description: "A menu controllable by the content management system. Scales based on what sections and menu items you provide"
-permalink: 'menu/'
+permalink: "menu/"
 eleventyNavigation:
-    key: 'Menu' 
-    order: '200'
-    parent: 'CMS'
+  key: "Menu"
+  order: "3"
+  parent: "Samples"
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/cms-menu.css" />
+{% endblock %} {% block body %}
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/cms-menu.css">
-{% endblock %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-{% block body %}
+<div id="banner-1018">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <img
+        class="cs-icon"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg"
+        alt="divider"
+        width="181"
+        height="36"
+        aria-hidden="true" />
+    </picture>
+    <span class="cs-int-title">Menu</span>
+    <p class="cs-text">
+      Discover Deliciousness, Explore Our Culinary Creations
+    </p>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg
+      " />
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg
+      " />
+    <img
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg"
+      alt="logo"
+      width="1920"
+      height="1000" />
+  </picture>
+</div>
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                  Menu Group                  -->
+<!-- ============================================ -->
 
-    <div id="banner-1018">
-        <div class="cs-container">
-            <picture class="cs-picture">
-                <img class="cs-icon" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg" alt="divider" width="181" height="36" aria-hidden="true">
-            </picture>
-            <span class="cs-int-title">Menu</span>
-            <p class="cs-text">
-                A fully editable menu with items grouped by breakfast, lunch or dinner. Scales with the addition of more items or sections.
-        </p>
-        </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg">
-            <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg" alt="logo" width="1920" height="1000">
-        </picture>
-    </div>
-
-    <!-- ============================================ -->
-    <!--                  Menu Group                  -->
-    <!-- ============================================ -->
-
-    <!--
+<!--
     
         Menu Rules
 
@@ -68,102 +84,103 @@ eleventyNavigation:
 
     -->
 
-    <div id="cs-menu-group">
-        {# Rendering the buttons #}
-        <div class="cs-wrapper">
-            {% for course in menu.courses %}
-                <div class="cs-button-group">
-                    <button class="cs-button {% if loop.index == 1 %}cs-active{% endif %}" data-filter="{{ loop.index }}"
-                onclick="window.location.href='#cs-menu-group';">
-                        {{ course.course_name}}
-                    </button>
-                </div>
-            {% endfor %}
-        </div>
-
-        {# Rendering the courses #}
-        {% for course in menu.courses %}
-            <div id="cs-menu{{ loop.index }}" class="cs-menu-group" data-category="{{ loop.index }}">
-                {% for section in course.sections %}
-                    <section class="cs-menu {% if loop.index % 2 == 0 %}cs-menu-style2{% endif %}">
-                        <div class="cs-container">
-                            <div class="cs-content">
-                                <h2 class="cs-title">{{ section.section_name }}</h2>
-                                <p class="cs-text">{{ section.section_description }}</p>
-                            </div>
-                            <ul class="cs-menu-list">
-
-                                {# Rendering the buttons #}
-                                {% for row in section.items | batch(3) %}
-                                    <div class="cs-menu-row cs-3">
-                                        {% for item in row %}
-                                            <li class="cs-menu-item">
-                                                <h3 class="cs-h3">
-                                                    {% if item.item_name %}
-                                                        <span class="cs-name">{{ item.item_name }}</span>
-                                                    {% endif %}
-
-                                                    {% if item.item_price %}
-                                                        <span class="cs-price">{{ item.item_price }}</span>
-                                                    {% endif %}
-                                                </h3>
-
-                                                {% if item.item_description %}
-                                                    <p class="cs-menu-p">{{ item.item_description }}</p>
-                                                {% endif %}
-                                            </li>
-                                        {% endfor %}
-                                    </div>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </section>
-
-                {% endfor %}
-            </div>
-        {% endfor %}
+<div id="cs-menu-group">
+  {# Rendering the buttons #}
+  <div class="cs-wrapper">
+    {% for course in menu.courses %}
+    <div class="cs-button-group">
+      <button
+        class="cs-button {% if loop.index == 1 %}cs-active{% endif %}"
+        data-filter="{{ loop.index }}"
+        onclick="window.location.href='#cs-menu-group';">
+        {{ course.course_name}}
+      </button>
     </div>
+    {% endfor %}
+  </div>
 
-    <script>
-        class CS_MenuFilter {
-            filtersSelector = '.cs-button';
-            menuSelector = '.cs-menu-group';
-            activeClass = 'cs-active';
-            hiddenClass = 'cs-hidden';
+  {# Rendering the courses #} {% for course in menu.courses %}
+  <div
+    id="cs-menu{{ loop.index }}"
+    class="cs-menu-group"
+    data-category="{{ loop.index }}">
+    {% for section in course.sections %}
+    <section
+      class="cs-menu {% if loop.index % 2 == 0 %}cs-menu-style2{% endif %}">
+      <div class="cs-container">
+        <div class="cs-content">
+          <h2 class="cs-title">{{ section.section_name }}</h2>
+          <p class="cs-text">{{ section.section_description }}</p>
+        </div>
+        <ul class="cs-menu-list">
+          {# Rendering the buttons #} {% for row in section.items | batch(3) %}
+          <div class="cs-menu-row cs-3">
+            {% for item in row %}
+            <li class="cs-menu-item">
+              <h3 class="cs-h3">
+                {% if item.item_name %}
+                <span class="cs-name">{{ item.item_name }}</span>
+                {% endif %} {% if item.item_price %}
+                <span class="cs-price">{{ item.item_price }}</span>
+                {% endif %}
+              </h3>
 
-            constructor() {
-                this.$menus = document.querySelectorAll(this.menuSelector);
-                const $filters = document.querySelectorAll(this.filtersSelector);
+              {% if item.item_description %}
+              <p class="cs-menu-p">{{ item.item_description }}</p>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
 
-                this.onClick($filters[0]);
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
 
-                for (const $filter of $filters) {
-                    $filter.addEventListener('click', () => this.onClick($filter));
-                }
-            }
+<script>
+  class CS_MenuFilter {
+    filtersSelector = ".cs-button";
+    menuSelector = ".cs-menu-group";
+    activeClass = "cs-active";
+    hiddenClass = "cs-hidden";
 
-            onClick($filter) {
-                this.filter($filter.dataset.filter);
+    constructor() {
+      this.$menus = document.querySelectorAll(this.menuSelector);
+      const $filters = document.querySelectorAll(this.filtersSelector);
 
-                const {activeClass} = this;
+      this.onClick($filters[0]);
 
-                this.$activeFilter?.classList.remove(activeClass);
-                $filter.classList.add(activeClass);
+      for (const $filter of $filters) {
+        $filter.addEventListener("click", () => this.onClick($filter));
+      }
+    }
 
-                this.$activeFilter = $filter;
-            }
+    onClick($filter) {
+      this.filter($filter.dataset.filter);
 
-            filter(filter) {
-                const showAll = filter == 'all';
-                const {hiddenClass} = this;
+      const { activeClass } = this;
 
-                for (const $menu of this.$menus) {
-                    const show = showAll || $menu.dataset.category == filter;
-                    $menu.classList.toggle(hiddenClass, !show);
-                }
-            }
-        }
+      this.$activeFilter?.classList.remove(activeClass);
+      $filter.classList.add(activeClass);
 
-        new CS_MenuFilter();
-    </script>
+      this.$activeFilter = $filter;
+    }
+
+    filter(filter) {
+      const showAll = filter == "all";
+      const { hiddenClass } = this;
+
+      for (const $menu of this.$menus) {
+        const show = showAll || $menu.dataset.category == filter;
+        $menu.classList.toggle(hiddenClass, !show);
+      }
+    }
+  }
+
+  new CS_MenuFilter();
+</script>
 {% endblock %}

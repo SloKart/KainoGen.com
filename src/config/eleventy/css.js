@@ -5,7 +5,7 @@ module.exports = {
     outputFileExtension: "css",
     compile: async (inputContent, inputPath) => {
         return async () => {
-            // Optional CS-TODO - Add additional PostCSS plugins to the postcss array
+            // Optional TODO - Add additional PostCSS plugins to the postcss array
             // https://postcss.org/
             let output = await postcss([autoprefixer]).process(inputContent, {
                 from: inputPath,

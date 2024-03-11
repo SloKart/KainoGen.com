@@ -1,681 +1,681 @@
 {
-    "courses": [
+  "courses": [
+    {
+      "course_name": "Breakfast",
+      "course_description": "Start your day with our delightful breakfast options, crafted with care to invigorate your senses and fuel your day. From fluffy pancakes drizzled with maple syrup to sizzling bacon paired with golden scrambled eggs, our breakfast menu offers a symphony of flavors to tantalize your taste buds.",
+      "sections": [
         {
-            "course_name": "Breakfast",
-            "course_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra elit in urna pretium, et facilisis dui faucibus.",
-            "sections": [
-                {
-                    "section_name": "Farm Fresh Eggs",
-                    "section_description": "Served with hash browns or tomatoes (fresh fruit extra) and toast or pancakes",
-                    "items": [
-                        {
-                            "item_name": "Two Eggs",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Two Eggs With Meat",
-                            "item_description": "(Bacon, Sausage Links, Sausage Patties, or Ham)",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Two Eggs With Corned Beef Hash",
-                            "item_description": null,
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Hearty Skillets",
-                    "section_description": "All Skillets are topped with Two Eggs and served with your choice of toast or Pancakes",
-                    "items": [
-                        {
-                            "item_name": "Melted Pot Skillet",
-                            "item_description": "Ham, bacon, sausage, onions, and hash browns, topped with American Swiss and cheddar cheeses",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Country Skillet",
-                            "item_description": "Country fried steak, onions, and hash browns, topped with cheddar cheese and smothered in sausage gravy",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Brickyard Skillet",
-                            "item_description": "Skirt steak, onions, green pepper, mushrooms, and hash browns, topped with mozzarella",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Greek Skillet",
-                            "item_description": "Gyros meat, onions, and hash browns, topped with feta cheese",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Chicken Skillet",
-                            "item_description": "Chicken breast, broccoli, green peppers, onions, spinach, tomatoes, and mushrooms",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "The Lumberjack",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "Choose Your Eggs",
-                            "item_description": "3 Eggs any Style",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Choose Your Meat",
-                            "item_description": "Bacon, Sausage Links, Sausage Patties, or Country Ham",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Choose Your Side #1",
-                            "item_description": "Hash Browns or Fruit",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Choose Your Side #2",
-                            "item_description": "2 Pancakes, 2 French Toast, Waffle, or 2 Slices of Toast (White, Wheat, Rye)",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Choose Your Side #3",
-                            "item_description": "1/2 Biscuits & Gravy, Bowl of Oatmeal",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "The Breakfast Club",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "2 Pancakes, 2 Eggs, 2 Bacon, 2 Links",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "1/2 French Toast, 2 Eggs, 2 Bacon, 2 Links",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Belgian Waffle, 2 Eggs, 2 Bacon, 2 Links",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "1/2 Biscuit & Gravy, 2 Eggs, 2 Bacon, 2 Links",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Full Biscuits & Gravy, 2 Eggs, 2 Bacon, 2 Links",
-                            "item_description": null,
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Meat n' Eggs",
-                    "section_description": "2 eggs served with hash browns and toast or pancakes",
-                    "items": [
-                        {
-                            "item_name": "Skirt Steak",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Pork Chops",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Country Fried Steak",
-                            "item_description": "Topped with sausage gravy",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Omelettes",
-                    "section_description": "Served with hash browns or tomatoes (fresh fruit extra) and toast or pancakes",
-                    "items": [
-                        {
-                            "item_name": "Tennessee Omelette",
-                            "item_description": "Bacon, sausage, ham, onions, green peppers, and mushrooms smothered in sausage gravy",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Vegetarian Omelette",
-                            "item_description": "Broccoli, green peppers, onions, tomatoes, and mushrooms with cheddar cheese",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Denver Omelette",
-                            "item_description": "Ham, green peppers, onions, and American cheese",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Spinach & Feta Omelette",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "South of the Border Omelette",
-                            "item_description": "Chorizo and cheddar cheese topped with pico de Gallo and crema drizzle served with a side of salsa",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Meat Lovers Omelette",
-                            "item_description": "Ham, bacon, sausage, onions, and American cheese",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Spartan Omelette",
-                            "item_description": "Gyro, Spinach, onion, tomato, and feta cheese",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "M&Y Favorites",
-                    "section_description": "Served with Hash Browns (fresh fruit extra)",
-                    "items": [
-                        {
-                            "item_name": "Greek Burrito",
-                            "item_description": "Gyros meat and onions scrambled in eggs with feta cheese with a side of tzatziki sauce",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Tex-Mex Burrito",
-                            "item_description": "Skirt steak scrambled in eggs with cheddar cheese. Served with pico de Gallo and crema drizzle served with chips and salsa *no potato*",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Country Burrito",
-                            "item_description": "Bacon, sausage, ham, and onions scrambled in eggs with cheddar. Served with a cup of sausage gravy",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Hot Honey Chicken and Waffles",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Avocado Toast",
-                            "item_description": "Smashed avocado, cherry tomatoes, everything bagel seasoning, and feta topped with balsamic glaze drizzle",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Eggs Benedict",
-                            "item_description": "English muffin topped with ham, poached eggs, and hollandaise sauce.",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Florentine Benedict",
-                            "item_description": "English muffin, ham, spinach, and poached eggs topped with hollandaise sauce",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Breakfast Panini",
-                            "item_description": "Scrambled eggs, bacon, and American cheese, on grilled sourdough bread",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Ham and Egg Croissant",
-                            "item_description": "Three eggs, sliced ham, and American cheese served on a croissant",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Breakfast Tacos",
-                            "item_description": "Scrambled eggs, chorizo, and cheddar cheese topped with pico de Gallo, and drizzled with crema and served with chips and salsa *no potato*",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Penelope’s Pancakes",
-                    "section_description": "Add Fresh Fruit for extra (Strawberries, Blueberry, or Banana)",
-                    "items": [
-                        {
-                            "item_name": "Triple Berry Pancakes",
-                            "item_description": "Topped with fresh strawberries, blueberries, blackberries, whipped cream, and vanilla drizzle",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Big Stack",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Chocolate Chip Pancakes",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Pecan Pancakes",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Banana Caramel Pecan Pancakes",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Oreo Pancakes",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Turtle Pancakes",
-                            "item_description": "(3 chocolate chip cakes, topped with pecans and caramel drizzle)",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Waffles",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "Belgium Waffle",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Pecan Waffle",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Banana Royale Waffle",
-                            "item_description": "Topped with banana, ice cream, whipped cream, and chocolate syrup",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Waffle Flight",
-                            "item_description": "3 pearl sugar waffles with a variety of toppings",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "French Toast",
-                    "section_description": "Add fresh fruit for extra",
-                    "items": [
-                        {
-                            "item_name": "Very Berry French Toast",
-                            "item_description": "Topped with fresh berries, whipped cream, and vanilla drizzle",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "French Toast",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Banana Nutella French Toast",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Stuffed French Toast",
-                            "item_description": "Stuffed with sweet cream cheese filling",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Strawberries and Cream French toast",
-                            "item_description": "Fresh strawberries with a vanilla cream drizzle",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Crêpes",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "Fruit Filled Crêpes",
-                            "item_description": "Choice of Blueberry, Strawberry, or Banana",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Nutella Crêpes",
-                            "item_description": null,
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Grab 'n' Share",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "French Toast Sticks",
-                            "item_description": "Served with icing dip",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Breakfast Nachos",
-                            "item_description": "Chips, Cheddar, Chorizo, pico de Gallo topped with scrambled egg and crema drizzle, salsa on the side",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Cinnamon Roll",
-                            "item_description": null,
-                            "item_price": null
-                        }
-                    ]
-                }
-            ]
+          "section_name": "Farm Fresh Eggs",
+          "section_description": "Savor the farm-fresh goodness of our eggs, served with your choice of hash browns or tomatoes (fresh fruit available for an extra burst of flavor) and accompanied by toast or fluffy pancakes.",
+          "items": [
+            {
+              "item_name": "Two Eggs",
+              "item_description": "Enjoy two eggs cooked just the way you like them, served with your choice of sides.",
+              "item_price": 7.99
+            },
+            {
+              "item_name": "Two Eggs With Meat",
+              "item_description": "Delight in two eggs cooked to perfection, paired with your choice of crispy bacon, savory sausage links, juicy sausage patties, or flavorful ham.",
+              "item_price": 9.99
+            },
+            {
+              "item_name": "Two Eggs With Corned Beef Hash",
+              "item_description": "Experience a hearty breakfast with two eggs cooked to order, served alongside our delicious corned beef hash.",
+              "item_price": 10.99
+            }
+          ]
         },
         {
-            "course_name": "Sandwiches",
-            "course_description": "Quisque congue blandit nibh, at cursus leo efficitur at. Nullam vulputate, magna varius interdum dapibus, magna sem pharetra sapien, ac venenatis ipsum metus vel massa.",
-            "sections": [
-                {
-                    "section_name": "All Roll'd Up",
-                    "section_description": "Wraps are served with a bowl of soup, French fries, and a pickle spear.",
-                    "items": [
-                        {
-                            "item_name": "Turkey Bacon Ranch Wrap",
-                            "item_description": "Turkey, bacon, lettuce, tomato, and ranch dressing wrapped in a flour tortilla.",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Buffalo Chicken Wrap",
-                            "item_description": "Chicken tenders tossed in buffalo sauce with lettuce, tomato, and cheddar cheese, served with ranch or blue cheese dressing.",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Hot Off The Press",
-                    "section_description": "Served with soup, French fries, and a pickle spear",
-                    "items": [
-                        {
-                            "item_name": "Chicken Pom Panini",
-                            "item_description": "Chicken breast and bacon with Swiss cheese and mayo on grilled sourdough",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Club Panini",
-                            "item_description": "Turkey and bacon topped with cheddar and mayo on grilled sourdough",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Da Chicago Panini",
-                            "item_description": "Thin sliced roast beef, American cheese, mayo and onion on grilled sourdough",
-                            "item_price": null
-                        }
-                    ]
-                },
-                {
-                    "section_name": "Feelin’ Brunchy",
-                    "section_description": "Served with soup, French fries, and a pickle spear.",
-                    "items": [
-                        {
-                            "item_name": "Monte Cristo",
-                            "item_description": "Ham and Swiss cheese dipped in French Toast batter and grilled golden brown",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Steak Sandwich",
-                            "item_description": "Slices of skirt steak with grilled onions, green peppers, and mozzarella cheese on Vienna bread",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Philly Chicken",
-                            "item_description": "Chicken breast with grilled onions, green peppers, mushrooms and mozzarella cheese on Vienna bread",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Italian Beef Sandwich",
-                            "item_description": "Thin slices of prime beef piled on Vienna bread, with a side of giardiniera",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "BLT",
-                            "item_description": "Bacon, lettuce, tomato and mayo on toasted bread",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Turkey BLT",
-                            "item_description": "Turkey, bacon, lettuce, tomato and mayo on two slices of toasted bread",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Gyros Sandwich",
-                            "item_description": "Gyros meat, pita and sliced onions served with our homemade tzatziki sauce on the side",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Buffalo Chicken",
-                            "item_description": "Deep fried chicken breast soaked in buffalo sauce",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Chicken Bacon Avo",
-                            "item_description": "Chicken Breast topped with bacon, avocado, and Swiss",
-                            "item_price": null
-                        }
-                    ]
-                }
-            ]
+          "section_name": "Hearty Skillets",
+          "section_description": "Indulge in our hearty skillets, each topped with two eggs and served with your choice of toast or fluffy pancakes.",
+          "items": [
+            {
+              "item_name": "Melted Pot Skillet",
+              "item_description": "Experience a savory medley of ham, bacon, sausage, onions, and hash browns, crowned with a trio of American Swiss, cheddar, and mozzarella cheeses.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Country Skillet",
+              "item_description": "Savor the comfort of country fried steak, sautéed onions, and crispy hash browns, smothered in rich sausage gravy and topped with melted cheddar cheese.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Brickyard Skillet",
+              "item_description": "Treat yourself to a flavorful blend of skirt steak, caramelized onions, green peppers, mushrooms, and golden hash browns, generously topped with melted mozzarella cheese.",
+              "item_price": 14.99
+            },
+            {
+              "item_name": "Greek Skillet",
+              "item_description": "Transport your taste buds to Greece with tender gyros meat, sautéed onions, and crispy hash browns, finished with a sprinkle of tangy feta cheese.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Chicken Skillet",
+              "item_description": "Enjoy a protein-packed skillet featuring grilled chicken breast, fresh broccoli, vibrant green peppers, onions, spinach, tomatoes, and mushrooms.",
+              "item_price": 15.99
+            }
+          ]
         },
         {
-            "course_name": "Burgers",
-            "course_description": "Cras vulputate lorem et leo fringilla, ac pulvinar nisl mollis. Sed et est est. Vivamus mattis erat ante, vel imperdiet lorem sagittis sed. Suspendisse potenti. Donec sit amet suscipit felis.",
-            "sections": [
-                {
-                    "section_name": "Niko's Burger Bar",
-                    "section_description": "All burgers are hand-smashed and served with soup, French fries, and a pickle spear. Onion Rings available. Options to make it a DOUBLE or add bacon.",
-                    "items": [
-                        {
-                            "item_name": "The American",
-                            "item_description": "Pure ground beef patty topped with American cheese",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Western Burger",
-                            "item_description": "Ground beef patty topped with cheddar, bacon, onion rings, and BBQ sauce",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Maple & Yolk Burger",
-                            "item_description": "Ground beef patty with bacon, Cheddar Jack cheese, topped with a fried egg",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Patty Melt",
-                            "item_description": "Smashed ground beef patty on grilled marble rye bread with grilled onions and American cheese",
-                            "item_price": null
-                        }
-                    ]
-                }
-            ]
+          "section_name": "The Lumberjack",
+          "section_description": "Craft your own hearty breakfast with our customizable Lumberjack platter. Choose your eggs, meat, and sides to create a meal that satisfies your cravings.",
+          "items": [
+            {
+              "item_name": "Choose Your Eggs",
+              "item_description": "Enjoy three eggs cooked to perfection, prepared just the way you like them.",
+              "item_price": 8.99
+            },
+            {
+              "item_name": "Choose Your Meat",
+              "item_description": "Select your preferred meat option: crispy bacon, succulent sausage links, flavorful sausage patties, or country-style ham slices.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Choose Your Side #1",
+              "item_description": "Pair your meal with your choice of crispy hash browns or a refreshing fruit salad.",
+              "item_price": 3.99
+            },
+            {
+              "item_name": "Choose Your Side #2",
+              "item_description": "Indulge in your favorite breakfast carb: two fluffy pancakes, two slices of French toast, a golden waffle, or two slices of toast (white, wheat, or rye).",
+              "item_price": 4.99
+            },
+            {
+              "item_name": "Choose Your Side #3",
+              "item_description": "Complete your breakfast experience with a comforting side: half order of biscuits & gravy or a piping hot bowl of oatmeal.",
+              "item_price": 5.99
+            }
+          ]
         },
         {
-            "course_name": "Salads",
-            "course_description": "Ut sodales, ex nec tempus euismod, purus libero pulvinar tortor, vel ultrices nunc ipsum sit amet mi. Morbi dignissim convallis diam sed auctor. Maecenas vehicula quam sit amet consequat convallis.",
-            "sections": [
-                {
-                    "section_name": "The Garden",
-                    "section_description": "All salads are served with a bowl of soup and your choice of dressing",
-                    "items": [
-                        {
-                            "item_name": "Crispy Chicken Avo Salad",
-                            "item_description": "Fresh greens, breaded chicken breast, cucumber, avocado, cherry tomatoes, and cheddar cheese",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Greek Salad",
-                            "item_description": "Fresh greens topped with cucumbers, cherry tomatoes, olives, and feta cheese",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Chef Salad",
-                            "item_description": "Fresh greens topped with ham, turkey, American and Swiss cheese, cucumbers, cherry tomatoes, and a hard-boiled egg",
-                            "item_price": null
-                        }
-                    ]
-                }
-            ]
+          "section_name": "The Breakfast Club",
+          "section_description": "Join The Breakfast Club and enjoy our satisfying breakfast combos, each featuring a harmonious blend of pancakes, eggs, bacon, and links.",
+          "items": [
+            {
+              "item_name": "2 Pancakes, 2 Eggs, 2 Bacon, 2 Links",
+              "item_description": "Indulge in a classic breakfast feast with two fluffy pancakes, two eggs cooked to perfection, and a generous serving of two strips of crispy bacon and two savory sausage links.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "1/2 French Toast, 2 Eggs, 2 Bacon, 2 Links",
+              "item_description": "Satisfy your sweet cravings with half a serving of delectable French toast, paired with two eggs, two strips of bacon, and two savory sausage links.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Belgian Waffle, 2 Eggs, 2 Bacon, 2 Links",
+              "item_description": "Enjoy a crispy Belgian waffle accompanied by two eggs, two strips of bacon, and two savory sausage links, creating a perfect balance of sweet and savory flavors.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "1/2 Biscuit & Gravy, 2 Eggs, 2 Bacon, 2 Links",
+              "item_description": "Indulge in the comforting flavors of biscuits and gravy with half a serving, paired with two eggs, two strips of bacon, and two savory sausage links.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Full Biscuits & Gravy, 2 Eggs, 2 Bacon, 2 Links",
+              "item_description": "Delight in the ultimate breakfast comfort food with a full serving of biscuits and gravy, complemented by two eggs, two strips of bacon, and two savory sausage links.",
+              "item_price": 14.99
+            }
+          ]
         },
         {
-            "course_name": "Sides",
-            "course_description": "Phasellus at facilisis nibh, nec pellentesque tellus. Quisque sem mauris, maximus ac ullamcorper a, elementum id tortor. Fusce accumsan placerat ornare.",
-            "sections": [
-                {
-                    "section_name": "Just a lil’ more",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "American Fries",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Hash Browns",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "French Fries",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Garden Salad",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Soup of the Day – Bowl",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Bowl of Oatmeal",
-                            "item_description": "Served with brown sugar and raisins (add fresh berries for extra)",
-                            "item_price": null
-                        }
-                    ]
-                }
-            ]
+          "section_name": "Meat n' Eggs",
+          "section_description": "Indulge in a satisfying breakfast with two eggs served alongside golden hash browns and your choice of toast or fluffy pancakes.",
+          "items": [
+            {
+              "item_name": "Skirt Steak",
+              "item_description": "Treat yourself to a tender and flavorful skirt steak, expertly grilled to perfection and served with two eggs, hash browns, and your choice of toast or pancakes.",
+              "item_price": 15.99
+            },
+            {
+              "item_name": "Pork Chops",
+              "item_description": "Savor the juicy goodness of our succulent pork chops, seasoned to perfection and served with two eggs, crispy hash browns, and your choice of toast or pancakes.",
+              "item_price": 14.99
+            },
+            {
+              "item_name": "Country Fried Steak",
+              "item_description": "Indulge in a classic favorite - country fried steak smothered in rich sausage gravy, served with two eggs, golden hash browns, and your choice of toast or pancakes.",
+              "item_price": 13.99
+            }
+          ]
         },
         {
-            "course_name": "Drinks",
-            "course_description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus aliquet ac massa sed consequat. Donec sit amet vulputate eros. Integer lorem sapien, vulputate eget lobortis ac, placerat vitae lacus.",
-            "sections": [
-                {
-                    "section_name": "The Bev’s",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "Soft Drinks",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Iced Tea",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Sweet Tea",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Orange or Apple Juice",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Regular or Decaf Coffee",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Hot Tea",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Hot Chocolate",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Milk",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Chocolate Milk",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Latte",
-                            "item_description": "Espresso shot in steamed milk (Plain, French Vanilla, Mocha)",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Espresso Shot",
-                            "item_description": null,
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Mimosas",
-                            "item_description": "Original, peach, strawberry",
-                            "item_price": null
-                        }
-                    ]
-                }
-            ]
+          "section_name": "Omelettes",
+          "section_description": "Indulge in our flavorful omelettes, each served with your choice of hash browns or tomatoes (fresh fruit available for an extra burst of flavor) and accompanied by toast or fluffy pancakes.",
+          "items": [
+            {
+              "item_name": "Tennessee Omelette",
+              "item_description": "A hearty omelette filled with bacon, sausage, ham, onions, green peppers, and mushrooms, generously smothered in savory sausage gravy.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Vegetarian Omelette",
+              "item_description": "A garden-fresh omelette bursting with broccoli, green peppers, onions, tomatoes, and mushrooms, perfectly complemented by melted cheddar cheese.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Denver Omelette",
+              "item_description": "Enjoy a classic Denver omelette featuring ham, green peppers, onions, and creamy American cheese.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Spinach & Feta Omelette",
+              "item_description": "Indulge in a delightful combination of fresh spinach and tangy feta cheese folded into a fluffy omelette.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "South of the Border Omelette",
+              "item_description": "Embark on a culinary journey with our South of the Border omelette, filled with spicy chorizo, melted cheddar cheese, and topped with zesty pico de Gallo and a creamy crema drizzle. Served with a side of salsa.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Meat Lovers Omelette",
+              "item_description": "For the carnivore in you, indulge in an omelette loaded with ham, bacon, sausage, onions, and melted American cheese.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Spartan Omelette",
+              "item_description": "Take your taste buds on a Mediterranean adventure with our Spartan omelette, featuring gyro meat, fresh spinach, onions, tomatoes, and creamy feta cheese.",
+              "item_price": 13.99
+            }
+          ]
         },
         {
-            "course_name": "Kids",
-            "course_description": "Proin porttitor ante quis magna sodales mattis. Pellentesque sed consectetur purus, eget sagittis urna. Cras fringilla, ligula at volutpat eleifend, nibh velit elementum felis, quis lobortis turpis nisi vitae augue.",
-            "sections": [
-                {
-                    "section_name": "For our Kiddos",
-                    "section_description": null,
-                    "items": [
-                        {
-                            "item_name": "Mickey Mouse Pancake",
-                            "item_description": "With 2 bacon or 2 links",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "French Toast Sticks",
-                            "item_description": "With icing to dip",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Cheeseburger",
-                            "item_description": "With fries",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Chicken Tenders",
-                            "item_description": "With fries",
-                            "item_price": null
-                        },
-                        {
-                            "item_name": "Grilled Cheese",
-                            "item_description": "With fries",
-                            "item_price": null
-                        }
-                    ]
-                }
-            ]
+          "section_name": "M&Y Favorites",
+          "section_description": "Indulge in our M&Y Favorites, served with hash browns (fresh fruit available for an extra burst of flavor).",
+          "items": [
+            {
+              "item_name": "Greek Burrito",
+              "item_description": "Experience the flavors of Greece with gyros meat and onions scrambled in eggs, folded in a warm tortilla with tangy feta cheese. Served with a side of tzatziki sauce.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Tex-Mex Burrito",
+              "item_description": "Savor the bold Tex-Mex flavors with skirt steak scrambled in eggs, mixed with cheddar cheese, and served with vibrant pico de Gallo and a creamy crema drizzle. Comes with chips and salsa.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Country Burrito",
+              "item_description": "Enjoy a hearty breakfast with bacon, sausage, ham, and onions scrambled in eggs, wrapped in a tortilla with melted cheddar cheese. Served with a cup of savory sausage gravy.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Hot Honey Chicken and Waffles",
+              "item_description": "Indulge in the perfect blend of sweet and savory with crispy chicken drizzled in hot honey, served atop fluffy waffles.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Avocado Toast",
+              "item_description": "Satisfy your avocado craving with smashed avocado, cherry tomatoes, everything bagel seasoning, and creamy feta cheese, all topped with a balsamic glaze drizzle.",
+              "item_price": 9.99
+            },
+            {
+              "item_name": "Eggs Benedict",
+              "item_description": "Classic breakfast elegance awaits with an English muffin topped with ham, perfectly poached eggs, and velvety hollandaise sauce.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Florentine Benedict",
+              "item_description": "Delight in a healthy twist on a classic with an English muffin, filled with ham, spinach, perfectly poached eggs, and drizzled with hollandaise sauce.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Breakfast Panini",
+              "item_description": "Enjoy a handheld delight with scrambled eggs, crispy bacon, and melty American cheese, sandwiched between grilled sourdough bread.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Ham and Egg Croissant",
+              "item_description": "Indulge in breakfast decadence with three eggs, sliced ham, and gooey American cheese, all nestled within a flaky croissant.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Breakfast Tacos",
+              "item_description": "Wake up your taste buds with scrambled eggs, spicy chorizo, and melted cheddar cheese, topped with fresh pico de Gallo, creamy crema, and served with chips and salsa.",
+              "item_price": 12.99
+            }
+          ]
+        },
+        {
+          "section_name": "Penelope’s Pancakes",
+          "section_description": "Elevate your pancakes with fresh fruit toppings for an extra burst of flavor (choose from strawberries, blueberries, or bananas).",
+          "items": [
+            {
+              "item_name": "Triple Berry Pancakes",
+              "item_description": "Indulge in a berry lover's dream with fluffy pancakes topped with fresh strawberries, blueberries, blackberries, whipped cream, and a drizzle of vanilla sauce.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Big Stack",
+              "item_description": "Satisfy your pancake cravings with a towering stack of fluffy pancakes, served with butter and maple syrup.",
+              "item_price": 9.99
+            },
+            {
+              "item_name": "Chocolate Chip Pancakes",
+              "item_description": "Enjoy a classic favorite with fluffy pancakes studded with rich chocolate chips, served with butter and maple syrup.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Pecan Pancakes",
+              "item_description": "Experience the crunch of pecans in every bite with pancakes filled with chopped pecans, served with butter and maple syrup.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Banana Caramel Pecan Pancakes",
+              "item_description": "Delight in a decadent combination of sliced bananas, caramel drizzle, and chopped pecans atop fluffy pancakes, served with butter and maple syrup.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Oreo Pancakes",
+              "item_description": "Indulge your sweet tooth with fluffy pancakes filled with crushed Oreo cookies, topped with whipped cream and chocolate sauce.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Turtle Pancakes",
+              "item_description": "Treat yourself to a delightful combination of chocolate chip pancakes topped with crunchy pecans and a luscious caramel drizzle.",
+              "item_price": 12.99
+            }
+          ]
+        },
+        {
+          "section_name": "Waffles",
+          "section_description": "Indulge in our delectable waffles, each offering a unique twist on a classic favorite.",
+          "items": [
+            {
+              "item_name": "Belgium Waffle",
+              "item_description": "Savor the classic Belgian waffle, perfectly golden and crisp on the outside, fluffy on the inside. Served with butter and maple syrup.",
+              "item_price": 9.99
+            },
+            {
+              "item_name": "Pecan Waffle",
+              "item_description": "Experience the perfect blend of crunch and sweetness with our pecan waffle, loaded with chopped pecans and served with butter and maple syrup.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Banana Royale Waffle",
+              "item_description": "Treat yourself to a decadent delight with our banana royale waffle, topped with fresh banana slices, creamy ice cream, whipped cream, and drizzled with luscious chocolate syrup.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Waffle Flight",
+              "item_description": "Embark on a culinary adventure with our waffle flight, featuring three pearl sugar waffles served with a variety of toppings to tantalize your taste buds.",
+              "item_price": 15.99
+            }
+          ]
+        },
+        {
+          "section_name": "French Toast",
+          "section_description": "Elevate your French toast experience with our delightful offerings. Fresh fruit available for an extra burst of flavor.",
+          "items": [
+            {
+              "item_name": "Very Berry French Toast",
+              "item_description": "Indulge in our decadent French toast topped with a medley of fresh berries, fluffy whipped cream, and a drizzle of vanilla sauce.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Classic French Toast",
+              "item_description": "Savor the timeless delight of our classic French toast, perfectly golden-brown and dusted with powdered sugar, served with butter and maple syrup.",
+              "item_price": 9.99
+            },
+            {
+              "item_name": "Banana Nutella French Toast",
+              "item_description": "Treat yourself to a heavenly combination of creamy Nutella spread and sliced bananas sandwiched between slices of French toast, served with a dusting of powdered sugar.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Stuffed French Toast",
+              "item_description": "Experience indulgence with our stuffed French toast, filled with a luscious sweet cream cheese filling, and served with butter and maple syrup.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Strawberries and Cream French Toast",
+              "item_description": "Delight your taste buds with our French toast topped with fresh strawberries and a velvety vanilla cream drizzle, creating a perfect harmony of flavors.",
+              "item_price": 10.99
+            }
+          ]
+        },
+        {
+          "section_name": "Crêpes",
+          "section_description": "Indulge in our delicate crêpes, filled with a variety of delicious ingredients.",
+          "items": [
+            {
+              "item_name": "Fruit Filled Crêpes",
+              "item_description": "Savor the freshness of our crêpes filled with your choice of juicy blueberries, ripe strawberries, or sliced bananas, creating a burst of fruity flavor with every bite.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Nutella Crêpes",
+              "item_description": "Experience the irresistible combination of creamy Nutella spread enveloped in warm crêpes, creating a decadent treat that will satisfy any sweet craving.",
+              "item_price": 12.99
+            }
+          ]
+        },
+        {
+          "section_name": "Grab 'n' Share",
+          "section_description": "Enjoy our shareable delights, perfect for grabbing on the go or sharing with friends.",
+          "items": [
+            {
+              "item_name": "French Toast Sticks",
+              "item_description": "Indulge in our crispy French toast sticks, served with a decadent icing dip for a delightful sweet treat.",
+              "item_price": 8.99
+            },
+            {
+              "item_name": "Breakfast Nachos",
+              "item_description": "Satisfy your savory cravings with our breakfast nachos, featuring crispy chips topped with melted cheddar cheese, spicy chorizo, flavorful pico de Gallo, scrambled egg, and a creamy crema drizzle. Served with salsa on the side.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Cinnamon Roll",
+              "item_description": "Delight in the classic goodness of our freshly baked cinnamon roll, swirled with cinnamon sugar and topped with rich icing.",
+              "item_price": 6.99
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "course_name": "Sandwiches",
+      "course_description": "Indulge in our delicious sandwiches, each crafted with fresh ingredients and bursting with flavor.",
+      "sections": [
+        {
+          "section_name": "All Roll'd Up",
+          "section_description": "Wrap up your cravings with our flavorful wraps, served with a bowl of soup, French fries, and a pickle spear.",
+          "items": [
+            {
+              "item_name": "Turkey Bacon Ranch Wrap",
+              "item_description": "Savor the combination of savory turkey, crispy bacon, fresh lettuce, ripe tomato, and creamy ranch dressing wrapped in a soft flour tortilla.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Buffalo Chicken Wrap",
+              "item_description": "Enjoy the spicy kick of chicken tenders tossed in buffalo sauce, paired with crisp lettuce, juicy tomato, and melted cheddar cheese, all wrapped in a warm flour tortilla. Served with your choice of ranch or blue cheese dressing.",
+              "item_price": 11.99
+            }
+          ]
+        },
+        {
+          "section_name": "Hot Off The Press",
+          "section_description": "Experience the comforting warmth of our pressed sandwiches, served with a side of soup, French fries, and a pickle spear.",
+          "items": [
+            {
+              "item_name": "Chicken Pom Panini",
+              "item_description": "Indulge in our Chicken Pom Panini featuring tender chicken breast and crispy bacon layered with Swiss cheese and mayo, perfectly grilled between slices of sourdough bread.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Club Panini",
+              "item_description": "Savor the classic flavors of our Club Panini, with savory turkey and crispy bacon, topped with melted cheddar cheese and mayo, all pressed between slices of grilled sourdough bread.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Da Chicago Panini",
+              "item_description": "Transport yourself to the flavors of Chicago with our Da Chicago Panini featuring thin-sliced roast beef, creamy American cheese, mayo, and onions, perfectly grilled between slices of sourdough bread.",
+              "item_price": 13.99
+            }
+          ]
+        },
+        {
+          "section_name": "Feelin’ Brunchy",
+          "section_description": "Get into the brunch mood with our delicious sandwiches, served with a side of soup, French fries, and a pickle spear.",
+          "items": [
+            {
+              "item_name": "Monte Cristo",
+              "item_description": "Indulge in our classic Monte Cristo featuring savory ham and Swiss cheese dipped in French Toast batter and grilled golden brown.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Steak Sandwich",
+              "item_description": "Satisfy your cravings with slices of juicy skirt steak, grilled onions, green peppers, and melted mozzarella cheese, all nestled between slices of Vienna bread.",
+              "item_price": 15.99
+            },
+            {
+              "item_name": "Philly Chicken",
+              "item_description": "Enjoy a taste of Philadelphia with our Philly Chicken sandwich, featuring grilled chicken breast, onions, green peppers, mushrooms, and melted mozzarella cheese on Vienna bread.",
+              "item_price": 14.99
+            },
+            {
+              "item_name": "Italian Beef Sandwich",
+              "item_description": "Experience the bold flavors of our Italian Beef Sandwich, with thin slices of prime beef piled high on Vienna bread, served with a side of giardiniera for an extra kick.",
+              "item_price": 14.99
+            },
+            {
+              "item_name": "BLT",
+              "item_description": "Classic meets delicious with our BLT sandwich, featuring crispy bacon, fresh lettuce, juicy tomato, and creamy mayo on toasted bread.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Turkey BLT",
+              "item_description": "Savor the combination of tender turkey, crispy bacon, fresh lettuce, ripe tomato, and creamy mayo, served on two slices of toasted bread.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Gyros Sandwich",
+              "item_description": "Transport your taste buds to Greece with our Gyros Sandwich, featuring flavorful gyros meat, pita, sliced onions, and a side of homemade tzatziki sauce.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Buffalo Chicken",
+              "item_description": "Spice up your meal with our Buffalo Chicken sandwich, featuring a deep-fried chicken breast soaked in zesty buffalo sauce.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Chicken Bacon Avo",
+              "item_description": "Treat yourself to our Chicken Bacon Avo sandwich, featuring tender chicken breast topped with crispy bacon, creamy avocado, and melted Swiss cheese.",
+              "item_price": 13.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course_name": "Burgers",
+      "course_description": "Experience the satisfaction of our flavorful burgers, crafted with care and served with a side of soup, French fries, and a pickle spear. Upgrade to Onion Rings available. Options to make it a DOUBLE or add bacon for an extra indulgence.",
+      "sections": [
+        {
+          "section_name": "Niko's Burger Bar",
+          "section_description": "Indulge in our hand-smashed burgers, made to perfection.",
+          "items": [
+            {
+              "item_name": "The American",
+              "item_description": "Savor the simplicity of our classic American burger featuring a pure ground beef patty topped with creamy American cheese.",
+              "item_price": 11.99
+            },
+            {
+              "item_name": "Western Burger",
+              "item_description": "Delight your taste buds with our Western Burger, featuring a juicy ground beef patty topped with melted cheddar cheese, crispy bacon, crunchy onion rings, and tangy BBQ sauce.",
+              "item_price": 13.99
+            },
+            {
+              "item_name": "Maple & Yolk Burger",
+              "item_description": "Experience the perfect blend of sweet and savory with our Maple & Yolk Burger, featuring a succulent ground beef patty topped with crispy bacon, flavorful Cheddar Jack cheese, and a perfectly fried egg.",
+              "item_price": 14.99
+            },
+            {
+              "item_name": "Patty Melt",
+              "item_description": "Enjoy a twist on a classic with our Patty Melt, featuring a smashed ground beef patty on grilled marble rye bread, complemented by savory grilled onions and melted American cheese.",
+              "item_price": 12.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course_name": "Salads",
+      "course_description": "Indulge in our fresh and flavorful salads, perfect for a light and satisfying meal.",
+      "sections": [
+        {
+          "section_name": "The Garden",
+          "section_description": "Savor the goodness of our garden-fresh salads, served with a bowl of soup and your choice of dressing.",
+          "items": [
+            {
+              "item_name": "Crispy Chicken Avo Salad",
+              "item_description": "Enjoy a delightful combination of fresh greens, crispy breaded chicken breast, cucumber, creamy avocado, cherry tomatoes, and shredded cheddar cheese.",
+              "item_price": 12.99
+            },
+            {
+              "item_name": "Greek Salad",
+              "item_description": "Transport your taste buds to Greece with our Greek Salad, featuring crisp greens topped with refreshing cucumbers, juicy cherry tomatoes, briny olives, and tangy feta cheese.",
+              "item_price": 10.99
+            },
+            {
+              "item_name": "Chef Salad",
+              "item_description": "Delight in our Chef Salad, featuring a medley of fresh greens topped with savory ham, tender turkey, creamy American and Swiss cheese, crisp cucumbers, juicy cherry tomatoes, and a perfectly boiled egg.",
+              "item_price": 11.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course_name": "Sides",
+      "course_description": "Complement your meal with our delectable side dishes, perfect for adding a little extra flavor to your dining experience.",
+      "sections": [
+        {
+          "section_name": "Just a lil’ more",
+          "section_description": "Complement your meal with these irresistible sides.",
+          "items": [
+            {
+              "item_name": "American Fries",
+              "item_description": "Crispy golden fries seasoned to perfection.",
+              "item_price": 3.49
+            },
+            {
+              "item_name": "Hash Browns",
+              "item_description": "Golden brown hash browns cooked to crispy perfection.",
+              "item_price": 3.99
+            },
+            {
+              "item_name": "French Fries",
+              "item_description": "Classic French fries served hot and crispy.",
+              "item_price": 2.99
+            },
+            {
+              "item_name": "Garden Salad",
+              "item_description": "A fresh and crisp mix of greens, cucumbers, and cherry tomatoes, served with your choice of dressing.",
+              "item_price": 4.99
+            },
+            {
+              "item_name": "Soup of the Day – Bowl",
+              "item_description": "Warm up with a comforting bowl of our soup of the day.",
+              "item_price": 5.99
+            },
+            {
+              "item_name": "Bowl of Oatmeal",
+              "item_description": "A hearty bowl of oatmeal served with brown sugar and raisins. Add fresh berries for an extra burst of flavor.",
+              "item_price": 4.49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course_name": "Refreshing Drinks",
+      "course_description": "Quench your thirst with our refreshing beverage options, perfect for pairing with any meal or enjoying on their own.",
+      "sections": [
+        {
+          "section_name": "Refreshing Drinks",
+          "section_description": "Choose from a variety of beverages to complement your meal.",
+          "items": [
+            {
+              "item_name": "Soft Drinks",
+              "item_description": "Enjoy a refreshing soda in your favorite flavor.",
+              "item_price": 2.49
+            },
+            {
+              "item_name": "Iced Tea",
+              "item_description": "Cool off with a tall glass of our freshly brewed iced tea.",
+              "item_price": 2.99
+            },
+            {
+              "item_name": "Sweet Tea",
+              "item_description": "Indulge in the southern classic with our perfectly sweetened iced tea.",
+              "item_price": 2.99
+            },
+            {
+              "item_name": "Orange or Apple Juice",
+              "item_description": "Start your day off right with a refreshing glass of orange or apple juice.",
+              "item_price": 2.99
+            },
+            {
+              "item_name": "Regular or Decaf Coffee",
+              "item_description": "Savor the rich flavor of our freshly brewed coffee, available in regular or decaf.",
+              "item_price": 1.99
+            },
+            {
+              "item_name": "Hot Tea",
+              "item_description": "Warm up with a comforting cup of hot tea.",
+              "item_price": 2.49
+            },
+            {
+              "item_name": "Hot Chocolate",
+              "item_description": "Indulge your sweet tooth with a steaming mug of hot chocolate.",
+              "item_price": 2.99
+            },
+            {
+              "item_name": "Milk",
+              "item_description": "Enjoy a classic glass of cold milk.",
+              "item_price": 1.99
+            },
+            {
+              "item_name": "Chocolate Milk",
+              "item_description": "Treat yourself to the creamy goodness of chocolate milk.",
+              "item_price": 2.49
+            },
+            {
+              "item_name": "Latte",
+              "item_description": "Indulge in the rich flavor of espresso blended with steamed milk, available in Plain, French Vanilla, or Mocha.",
+              "item_price": 3.99
+            },
+            {
+              "item_name": "Espresso Shot",
+              "item_description": "Get a quick caffeine boost with a shot of espresso.",
+              "item_price": 1.99
+            },
+            {
+              "item_name": "Mimosas",
+              "item_description": "Add some sparkle to your brunch with our refreshing mimosas, available in Original, Peach, or Strawberry flavors.",
+              "item_price": 5.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course_name": "Kids",
+      "course_description": "Treat your little ones to delicious meals designed just for them.",
+      "sections": [
+        {
+          "section_name": "For our Kiddos",
+          "section_description": "Kid-friendly meals that will put a smile on their faces.",
+          "items": [
+            {
+              "item_name": "Mickey Mouse Pancake",
+              "item_description": "A fun-shaped pancake served with 2 bacon strips or 2 sausage links.",
+              "item_price": 4.99
+            },
+            {
+              "item_name": "French Toast Sticks",
+              "item_description": "Golden brown French toast sticks served with icing for dipping.",
+              "item_price": 4.49
+            },
+            {
+              "item_name": "Cheeseburger",
+              "item_description": "A classic cheeseburger served with a side of fries.",
+              "item_price": 5.99
+            },
+            {
+              "item_name": "Chicken Tenders",
+              "item_description": "Tender chicken strips served with a side of fries.",
+              "item_price": 5.49
+            },
+            {
+              "item_name": "Grilled Cheese",
+              "item_description": "Melted cheese sandwiched between two slices of toasted bread, served with fries.",
+              "item_price": 4.99
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
