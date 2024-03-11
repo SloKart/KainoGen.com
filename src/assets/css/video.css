@@ -137,6 +137,10 @@
   #steps-889 {
     padding: var(--sectionPadding);
   }
+  #steps-889 .cs-iframe {
+    width: 80vw;
+    height: 40vw;
+  }
   #steps-889 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -174,6 +178,7 @@
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
+    z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
@@ -186,6 +191,7 @@
     opacity: 1;
     top: 0;
     left: 0;
+    z-index: -1;
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
@@ -193,10 +199,7 @@
     width: 100%;
   }
   #steps-889 .cs-card-group {
-    background-color: var(--primaryLight);
-    border: 1px solid var(--primary);
     width: 100%;
-    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -206,27 +209,13 @@
     gap: clamp(1.25rem, 3vw, 2.5rem);
   }
   #steps-889 .cs-item {
-    margin: 2rem;
     text-align: center;
     list-style: none;
     width: 100%;
-    width: 20.375rem;
-    height: 20.375rem;
+    max-width: 20.375rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #steps-889 .cs-item:not(.cs-arrow) {
-    background-color: #ffffff;
-    padding: 1rem;
-    margin: 2rem;
-    box-shadow: 0 4px 6px rgba(1, 1, 1, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 0.5rem;
-  }
-  #steps-889 .cs-item:not(.cs-arrow):hover {
-    transform: translateY(-5px); /* Add a slight lift effect on hover */
-    box-shadow: 0 6px 8px rgba(1, 1, 1, 0.4); /* Enhance box shadow on hover */
   }
   #steps-889 .cs-picture {
     margin-bottom: 1.5rem;
@@ -273,17 +262,12 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #steps-889 .cs-card-group {
-    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-  #steps-889 .cs-card-group .cs-item {
-    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: stretch;
   }
   #steps-889 .cs-arrow {
     align-self: center;
-    justify-self: center;
     transform: rotate(40deg);
   }
 }
@@ -291,12 +275,6 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode #steps-889 .cs-topper {
     color: var(--primaryLight);
-  }
-  body.dark-mode #steps-889 .scrollBox {
-    background-color: var(--medium);
-  }
-  body.dark-mode #steps-889 .card {
-    background-color: var(--primary);
   }
   body.dark-mode #steps-889 .cs-title,
   body.dark-mode #steps-889 .cs-text,
@@ -314,25 +292,6 @@
   body.dark-mode #steps-889 .cs-arrow {
     opacity: 0.5;
   }
-}
-/* WebKit (Safari, Chrome) */
-.scrollBox::-webkit-scrollbar {
-  width: 12px; /* Adjust scrollbar width */
-}
-
-.scrollBox::-webkit-scrollbar-thumb {
-  background-color: var(--primary); /* Customize thumb color */
-  border-radius: 12px; /* Optional: Round the thumb */
-}
-
-/* Firefox */
-.scrollBox::-moz-scrollbar {
-  width: 12px;
-}
-
-.scrollBox::-moz-scrollbar-thumb {
-  background-color: var(--primary);
-  border-radius: 4px;
 }
 
 /*# sourceMappingURL=video.css.map */
