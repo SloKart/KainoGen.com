@@ -1058,6 +1058,7 @@
       max-width: calc(209 / 16 * 1rem);
       height: auto;
       display: block;
+      filter: grayscale(1) brightness(1000%);
     }
 
     .cs-logo-img {

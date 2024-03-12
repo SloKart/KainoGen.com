@@ -130,7 +130,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 2;
       }
 
       img {
@@ -144,6 +143,17 @@
       }
     }
   }
+}
+
+#int-hero {
+  padding-top: calc(20 / 16 * 1rem);
+  padding-bottom: calc(20 / 16 * 1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 /* Tablet - 768px */
@@ -182,8 +192,6 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #collection {
-    padding: var(--sectionPadding);
-
     .cs-container {
       width: 100%;
       max-width: 80rem;

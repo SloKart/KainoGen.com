@@ -4,176 +4,176 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #banner-1400 {
-        padding: var(--sectionPadding);
-        /* 190px - 268px */
-        padding-top: clamp(11.875rem, 25vw, 16.75rem);
-        padding-bottom: calc(100 / 16 * 1rem);
-        position: relative;
-        z-index: 1;
-        /* clips the line from causing overflow issues for going off screen */
-        overflow: hidden;
+  #banner-1400 {
+    padding: var(--sectionPadding);
+    /* 190px - 268px */
+    padding-top: clamp(11.875rem, 25vw, 16.75rem);
+    padding-bottom: calc(100 / 16 * 1rem);
+    position: relative;
+    z-index: 1;
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
 
-        .cs-container {
-            text-align: center;
-            width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            /* 8px - 12px */
-            gap: clamp(0.5rem, 1vw, 0.75rem);
-        }
-
-        .cs-int-title {
-            /* 39px - 61px */
-            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-            font-weight: 900;
-            line-height: 1.2em;
-            text-align: inherit;
-            margin: 0;
-            color: var(--bodyTextColorWhite);
-            position: relative;
-        }
-
-        .cs-breadcrumbs {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cs-link {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.2em;
-            text-decoration: none;
-            color: var(--bodyTextColorWhite);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-
-            &:last-of-type {
-                /* remove the chevron on the last list item */
-                &::after {
-                    display: none;
-                }
-            }
-
-            &:after {
-                /* chevron */
-                content: "";
-                width: calc(7 / 16 * 1rem);
-                height: calc(12 / 16 * 1rem);
-                margin: 0 calc(16 / 16 * 1rem);
-                background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                display: block;
-                position: relative;
-            }
-
-            &.cs-active {
-                color: var(--primary);
-            }
-        }
-
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-
-            &:before {
-                /* gradient overlay */
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: #000;
-                opacity: 0.4;
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
-
-            &:after {
-                /* gradient overlay */
-                content: "";
-                width: 100%;
-                height: 40%;
-                background: -webkit-gradient(
-                    linear,
-                    left top,
-                    left bottom,
-                    from(rgba(0, 0, 0, 1)),
-                    to(rgba(0, 0, 0, 0))
-                );
-                background: -o-linear-gradient(
-                    top,
-                    rgba(0, 0, 0, 1) 0%,
-                    rgba(0, 0, 0, 0) 100%
-                );
-                background: linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 1) 0%,
-                    rgba(0, 0, 0, 0) 100%
-                );
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 2;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                /* Makes img tag act as a background image */
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        }
+    .cs-container {
+      text-align: center;
+      width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      /* 8px - 12px */
+      gap: clamp(0.5rem, 1vw, 0.75rem);
     }
+
+    .cs-int-title {
+      /* 39px - 61px */
+      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: inherit;
+      margin: 0;
+      color: var(--bodyTextColorWhite);
+      position: relative;
+    }
+
+    .cs-breadcrumbs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cs-link {
+      font-size: calc(16 / 16 * 1rem);
+      line-height: 1.2em;
+      text-decoration: none;
+      color: var(--bodyTextColorWhite);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &:last-of-type {
+        /* remove the chevron on the last list item */
+        &::after {
+          display: none;
+        }
+      }
+
+      &:after {
+        /* chevron */
+        content: "";
+        width: calc(7 / 16 * 1rem);
+        height: calc(12 / 16 * 1rem);
+        margin: 0 calc(16 / 16 * 1rem);
+        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+      }
+
+      &.cs-active {
+        color: var(--primary);
+      }
+    }
+
+    .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      &:before {
+        /* gradient overlay */
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.4;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      &:after {
+        /* gradient overlay */
+        content: "";
+        width: 100%;
+        height: 40%;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(0, 0, 0, 1)),
+          to(rgba(0, 0, 0, 0))
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #banner-1400 {
-        .cs-background {
-            &:before {
-                width: 50%;
-                height: 100%;
-                background: -webkit-gradient(
-                    linear,
-                    left top,
-                    right top,
-                    from(rgba(0, 0, 0, 1)),
-                    to(rgba(0, 0, 0, 0))
-                );
-                background: -o-linear-gradient(
-                    left,
-                    rgba(0, 0, 0, 1) 0%,
-                    rgba(0, 0, 0, 0) 100%
-                );
-                background: linear-gradient(
-                    to right,
-                    rgba(0, 0, 0, 1) 0%,
-                    rgba(0, 0, 0, 0) 100%
-                );
-                opacity: 1;
-            }
-        }
+  #banner-1400 {
+    .cs-background {
+      &:before {
+        width: 50%;
+        height: 100%;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(0, 0, 0, 1)),
+          to(rgba(0, 0, 0, 0))
+        );
+        background: -o-linear-gradient(
+          left,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        opacity: 1;
+      }
     }
+  }
 }
 
 /* Tablet - 768px */
@@ -336,7 +336,7 @@
         border-radius: 5px;
         appearance: menulist-button;
 
-        background-color: var(--);
+        background-color: lemonchiffon;
         cursor: pointer;
         transition: border-color 0.3s ease;
 

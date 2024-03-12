@@ -905,6 +905,7 @@
     max-width: 13.0625rem;
     height: auto;
     display: block;
+    filter: grayscale(1) brightness(1000%);
   }
   #footer-1390 .cs-logo-img {
     width: 100%;
