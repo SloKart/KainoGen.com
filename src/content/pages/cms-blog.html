@@ -18,10 +18,10 @@ eleventyNavigation:
 
 <div id="banner-1402">
   <div class="cs-container">
-    <span class="cs-int-title">Who we are</span>
+    <span class="cs-int-title">Our Blog</span>
     <div class="cs-breadcrumbs">
       <a href="/" class="cs-link">Home</a>
-      <a class="cs-link">About</a>
+      <a role="presentation" class="cs-link">About</a>
       <a href="/about" class="cs-link cs-active">Our Blog</a>
     </div>
   </div>
@@ -30,11 +30,11 @@ eleventyNavigation:
     <!--Mobile Image-->
     <source
       media="(max-width: 600px)"
-      srcset="../../assets/images/images/pen-paper-laptop.jpg" />
+      srcset="../../assets/images/images/pen-paper-laptop-mobile.webp" />
     <!--Tablet and above Image-->
     <source
       media="(min-width: 601px)"
-      srcset="../../assets/images/images/pen-paper-laptop.jpg" />
+      srcset="../../assets/images/images/pen-paper-laptop.webp" />
     <img
       decoding="async"
       src="../../assets/images/images/pen-paper-laptop.jpg"
@@ -67,6 +67,7 @@ eleventyNavigation:
           alt="{{ post.data.imageAlt }}"
           width="795"
           height="400"
+          loading="lazy"
           decoding="async" />
       </picture>
       <!--Article Info-->

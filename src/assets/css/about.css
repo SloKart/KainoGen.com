@@ -265,6 +265,18 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-523 {
+    background-color: black;
+  }
+  body.dark-mode #sbs-523 .cs-topper,
+  body.dark-mode #sbs-523 .cs-content {
+    /* Adjust text color to improve contrast */
+    color: var(--primaryLight); /* Example color */
+    /* Update background color to ensure sufficient contrast */
+  }
+  body.dark-mode #sbs-523 .cs-content {
+    background-color: black;
+  }
   body.dark-mode #sbs-523 .cs-title,
   body.dark-mode #sbs-523 .cs-text {
     color: var(--bodyTextColorWhite);
@@ -463,7 +475,7 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #why-choose-682 .cs-topper .cs-color {
+  body.dark-mode #why-choose-682 .cs-color {
     color: var(--primaryLight);
   }
   body.dark-mode #why-choose-682 .cs-title,

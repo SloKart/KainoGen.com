@@ -311,6 +311,17 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #sbs-523 {
+      background-color: black;
+
+      .cs-topper,
+      .cs-content {
+        /* Adjust text color to improve contrast */
+        color: var(--primaryLight); /* Example color */
+        /* Update background color to ensure sufficient contrast */
+      }
+      .cs-content {
+        background-color: black;
+      }
       .cs-title,
       .cs-text {
         color: var(--bodyTextColorWhite);
@@ -548,7 +559,7 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #why-choose-682 {
-      .cs-topper .cs-color {
+      .cs-color {
         color: var(--primaryLight);
       }
       .cs-title,

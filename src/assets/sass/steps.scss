@@ -431,6 +431,12 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #steps-284 {
+      background-color: black;
+
+      .cs-topper {
+        color: var(--primaryLight);
+      }
+
       .cs-title,
       .cs-text,
       .cs-number {
