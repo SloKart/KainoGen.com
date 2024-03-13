@@ -13,25 +13,24 @@
       <a href="/" class="cs-link">Home</a>
       <a role="presentation" class="cs-link">Sample Shop</a>
       <!-- the text and the font size is 0 so that the link is not flagged by lighthouse -->
-      <a href="/collection" class="cs-link cs-active" style="font-size: 0" 
+      <a href="/collection" class="cs-link cs-active" style="font-size: 0"
         >{{ shopCollection.title }} Current Collection</a
       >
     </div>
   </div>
   <!--Background Image-->
   <picture class="cs-background">
-    <!--Mobile Image-->
+    <!-- Mobile Image -->
     <source
       media="(max-width: 300px)"
       srcset="
         ../../assets/images/images/cash-cart-horizontal-mobile-phone.webp
       " />
-    <!--Tablet and above Image-->
+    <!-- Tablet and above Image -->
     <source
-      <source
-      media="(max-width: 600px)"
+      media="(min-width: 301px) and (max-width: 600px)"
       srcset="../../assets/images/images/cash-cart-horizontal-mobile.webp" />
-    <!--Tablet and above Image-->
+    <!-- Tablet and above Image -->
     <source
       media="(min-width: 601px)"
       srcset="../../assets/images/images/cash-cart-horizontal.webp" />

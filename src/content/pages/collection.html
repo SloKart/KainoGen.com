@@ -15,17 +15,22 @@
         "permalink": "/collection/{{ shopCollection.handle }}/index.html",
         "eleventyNavigation": {
             "key": "{{ shopCollection.title }}",
-            "parent": "Sample Shop",
-            "order": 500
-
+            "parent": "Shop"
         }
     }    
 }
 ---
 
-{% extends "layouts/collection.html" %} {# As the kit uses an
-eleventyComputed.js file to transform the data into something a little more
-developer friendly, and eleventy doesn't allow computed data to be used in
-pagination keys, we have to use a hacky workaround in the `before` callback to
-access our shopCollections. More info in the below GitHub issue:
-https://github.com/11ty/eleventy/issues/2365 #}
+{% extends "layouts/collection.html" %}
+
+{#
+
+As the kit uses an eleventyComputed.js file to transform the data into something
+a little more developer friendly, and eleventy doesn't allow computed data to be used
+in pagination keys, we have to use a hacky workaround in the `before` callback to access
+our shopCollections.
+
+More info in the below GitHub issue:
+https://github.com/11ty/eleventy/issues/2365
+
+#}
