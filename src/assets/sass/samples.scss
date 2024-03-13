@@ -70,7 +70,7 @@
     position: relative;
   }
   #banner-1402 .cs-link.cs-active {
-    color: var(--primary);
+    color: var(--secondaryLight);
   }
   #banner-1402 .cs-background {
     width: 100%;
@@ -286,7 +286,7 @@
 @media only screen and (min-width: 48rem) {
   #services-564 .cs-container {
     max-width: 80rem;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
   }

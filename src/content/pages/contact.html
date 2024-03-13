@@ -26,6 +26,9 @@ eleventyNavigation:
   </div>
   <!--Background Image-->
   <picture class="cs-background">
+    <source
+      media="(min-width: 601px)"
+      srcset="../../assets/images/images/cleveland-skyline-mobile-phone.webp" />
     <!--Mobile Image-->
     <source
       media="(max-width: 600px)"
@@ -37,7 +40,7 @@ eleventyNavigation:
     <img
       decoding="async"
       src="../../assets/images/images/cleveland-skyline-horizontal.jpg"
-      alt="people laughing"
+      alt="cleveland skyline"
       width="1280"
       height="568"
       aria-hidden="true" />
@@ -55,11 +58,14 @@ eleventyNavigation:
       <!--Mobile Image-->
       <source
         media="(max-width: 600px)"
-        srcset="/assets/images/images/cleveland.png" />
+        srcset="/assets/images/images/cleveland-mobile-phone.webp" />
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/images/images/cleveland-mobile.webp" />
       <!--Tablet and above Image-->
       <source
         media="(min-width: 601px)"
-        srcset="/assets/images/images/cleveland.png" />
+        srcset="/assets/images/images/cleveland.webp" />
       <img
         loading="lazy"
         decoding="async"

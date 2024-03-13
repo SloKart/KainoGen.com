@@ -27,12 +27,17 @@ eleventyNavigation:
   <picture class="cs-background">
     <!--Mobile Image-->
     <source
+      media="(max-width: 300px)"
+      srcset="
+        ../../assets/images/images/pen-paper-laptop-2-mobile-phone.webp
+      " />
+    <source
       media="(max-width: 600px)"
-      srcset="../../assets/images/images/pen-paper-laptop-2.jpg" />
+      srcset="../../assets/images/images/pen-paper-laptop-2-mobile.webp" />
     <!--Tablet and above Image-->
     <source
       media="(min-width: 601px)"
-      srcset="../../assets/images/images/pen-paper-laptop-2.jpg" />
+      srcset="../../assets/images/images/pen-paper-laptop-2.webp" />
     <img
       decoding="async"
       src="../../assets/images/images/pen-paper-laptop-2.jpg"
@@ -44,104 +49,131 @@ eleventyNavigation:
 </div>
 
 <!-- ============================================ -->
-<!--                 Content Page                 -->
+<!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="content-page-847">
+<section id="RPsbs-1593">
   <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="../../assets/images/images/busy-restaurant-s.webp" />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="../../assets/images/images/busy-restaurant.webp" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="../../assets/images/images/busy-restaurant.jpg"
+          alt="mechanic"
+          width="375"
+          height="500" />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="../../assets/images/images/restaurant-s.webp" />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="../../assets/images/images/restaurant.webp" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="../../assets/images/images/restaurant.jpg
+          "
+          alt="mechanic"
+          width="413"
+          height="280" />
+      </picture>
+    </div>
     <div class="cs-content">
-      <h1 class="cs-title">Our Blog and sample Menu</h1>
-      <h3>
-        Here you can see samples of the Content Management System we offer, in
-        action.
-      </h3>
-      <h2 class="cs-h2">Blog</h2>
-      <h6>
-        Our blog is powered by a robust Content Management System (CMS) that
-        makes publishing and managing content a breeze. With our intuitive CMS,
-        you can easily create, edit, and publish blog posts without any
-        technical knowledge. Here's what our CMS offers:
-      </h6>
-
-      <ul>
-        <li>User-friendly interface for effortless content management</li>
-        <li>Simple post creation and editing tools</li>
-        <li>Image and media integration for visually engaging posts</li>
-        <li>SEO optimization features to boost visibility and reach</li>
-        <li>Mobile-responsive design for seamless viewing across devices</li>
-      </ul>
-
-      <p>
-        Experience the power of our CMS firsthand by exploring our curated
-        selection of blog posts.
-      </p>
-      <p>
-        See an example in action, visit
-        <a class="cs-link" href="/blog">our Blog</a>.
-      </p>
-
-      <h2 class="cs-h2">Menu</h2>
-
-      <p>
+      <span class="cs-topper">About Our</span>
+      <h2 class="cs-title">Editable Menu</h2>
+      <p class="cs-text">
         Our menu management system is designed to streamline the process of
         updating and showcasing your offerings. Whether you run a restaurant,
         cafe, or any establishment with a menu, our CMS empowers you to:
       </p>
-
-      <ul>
+      <ul class="cs-list">
         <li>Easily add, remove, or modify menu items</li>
         <li>Organize items into categories for clarity</li>
         <li>Include descriptions, prices, and images for each item</li>
         <li>Highlight specials or featured items with ease</li>
         <li>Automatically update menus across your website for consistency</li>
       </ul>
-
-      <p>
-        With our intuitive menu management system, you can keep your offerings
-        up-to-date and showcase them beautifully on your website.
-      </p>
-      <p>
-        See an example in action, visit our sample
-        <a class="cs-link" href="/menu">Menu</a>.
-      </p>
+      <a href="/menu" class="cs-button-solid">View A Sample Menu</a>
     </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RPsbsr-1593">
+  <div class="cs-container">
     <div class="cs-image-group">
-      <!--Top Picture-->
-      <picture class="cs-picture">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
         <!--Mobile Image-->
         <source
           media="(max-width: 600px)"
-          srcset="../../assets/images/images/influencer.jpg" />
+          srcset="../../assets/images/images/selfie-s.webp" />
         <!--Tablet and above Image-->
         <source
           media="(min-width: 601px)"
-          srcset="../../assets/images/images/influencer.jpg" />
+          srcset="../../assets/images/images/selfie.webp" />
         <img
+          loading="lazy"
+          decoding="async"
+          src="../../assets/images/images/selfie.jpg"
+          alt="mechanic"
+          width="413"
+          height="500" />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="../../assets/images/images/influencer-s.webp" />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="../../assets/images/images/influencer.webp" />
+        <img
+          loading="lazy"
           decoding="async"
           src="../../assets/images/images/influencer.jpg"
-          alt="person"
-          width="542"
-          height="520"
-          aria-hidden="true" />
+          alt="mechanic"
+          width="413"
+          height="280" />
       </picture>
-      <!--Top Picture-->
-      <picture class="cs-picture">
-        <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="../../assets/images/images/restaurant.jpg" />
-        <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="../../assets/images/images/restaurant.jpg" />
-        <img
-          decoding="async"
-          src="../../assets/images/images/restaurant.jpg"
-          alt="person"
-          width="542"
-          height="520"
-          aria-hidden="true" />
-      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">About Our </span>
+      <h2 class="cs-title">Blog Management System</h2>
+      <p class="cs-text">
+        Our blog is powered by a robust Content Management System (CMS) that
+        makes publishing and managing content a breeze. With our intuitive CMS,
+        you can easily create, edit, and publish blog posts without any
+        technical knowledge. Here's what our CMS offers:
+      </p>
+      <ul class="cs-list">
+        <li>User-friendly interface for effortless content management</li>
+        <li>Simple post creation and editing tools</li>
+        <li>Image and media integration for visually engaging posts</li>
+        <li>SEO optimization features to boost visibility and reach</li>
+        <li>Mobile-responsive design for seamless viewing across devices</li>
+      </ul>
+      <a href="/blog" class="cs-button-solid">View Our Blog</a>
     </div>
   </div>
 </section>

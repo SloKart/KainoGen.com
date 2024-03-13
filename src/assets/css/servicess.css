@@ -71,7 +71,7 @@
     position: relative;
   }
   #banner-1400 .cs-link.cs-active {
-    color: var(--primary);
+    color: var(--secondaryLight);
   }
   #banner-1400 .cs-background {
     width: 100%;
@@ -315,7 +315,7 @@
     /* matches the -88px the cs-price-box's margin top to offset it */
     margin: 5.5rem 0 0 0;
     /* 80px - 100px top *
-    /* 16px - 56px left & right */
+          /* 16px - 56px left & right */
     /* 16px - 48px bottom */
     padding: clamp(5rem, 9vw, 6.25rem) clamp(1rem, 2.3vw, 3.5rem) clamp(1rem, 5vw, 3rem);
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.17);
@@ -350,7 +350,7 @@
     text-align: center;
     font-weight: 700;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
   }
   #pricing-603 .cs-price {
     /* 24px - 32px */
@@ -366,8 +366,8 @@
     line-height: 1.2em;
     text-align: center;
     margin: 0;
-    color: var(--bodyTextColorWhite);
     opacity: 0.8;
+    color: var(--bodyTextColorWhite);
   }
   #pricing-603 .cs-item-text {
     font-size: 0.875rem;
@@ -488,10 +488,12 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #pricing-603 .cs-title,
-  body.dark-mode #pricing-603 .cs-text, body.dark-mode #pricing-603 .cs-item-text {
+  body.dark-mode #pricing-603 .cs-text,
+  body.dark-mode #pricing-603 .cs-item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-603 .cs-text, body.dark-mode #pricing-603 .cs-item-text {
+  body.dark-mode #pricing-603 .cs-text,
+  body.dark-mode #pricing-603 .cs-item-text {
     opacity: 0.8;
   }
   body.dark-mode #pricing-603 .cs-plan {
@@ -502,6 +504,9 @@
   }
   body.dark-mode #pricing-603 .cs-price-box {
     background-color: var(--accent);
+  }
+  body.dark-mode #pricing-603 .cs-package {
+    color: var(--bodyTextColorWhite);
   }
   body.dark-mode #pricing-603 .cs-item-p,
   body.dark-mode #pricing-603 .cs-included,
@@ -756,7 +761,7 @@
     border-color: var(--primary);
   }
   body.dark-mode #steps-1376 .cs-topper {
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   body.dark-mode #steps-1376 .cs-title,
   body.dark-mode #steps-1376 .cs-text,
@@ -946,6 +951,12 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #faq-1108 .cs-content {
+    background-color: var(--dark);
+  }
+  body.dark-mode #faq-1108 .cs-topper {
+    color: var(--primaryLight);
+  }
   body.dark-mode #faq-1108 .cs-title,
   body.dark-mode #faq-1108 .cs-item-p {
     color: var(--bodyTextColorWhite);

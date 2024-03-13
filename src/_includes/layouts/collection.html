@@ -8,12 +8,13 @@
 
 <div id="banner-1400">
   <div class="cs-container">
-    <span class="cs-int-title">Sample E-Commerce Shop</span>
+    <h2 class="cs-int-title">Sample E-Commerce Shop</h2>
     <div class="cs-breadcrumbs">
       <a href="/" class="cs-link">Home</a>
-      <a class="cs-link">Sample Shop</a>
-      <a href="/collection" class="cs-link cs-active"
-        >{{ shopCollection.title }}</a
+      <a role="presentation" class="cs-link">Sample Shop</a>
+      <!-- the text and the font size is 0 so that the link is not flagged by lighthouse -->
+      <a href="/collection" class="cs-link cs-active" style="font-size: 0" 
+        >{{ shopCollection.title }} Current Collection</a
       >
     </div>
   </div>
@@ -21,12 +22,19 @@
   <picture class="cs-background">
     <!--Mobile Image-->
     <source
+      media="(max-width: 300px)"
+      srcset="
+        ../../assets/images/images/cash-cart-horizontal-mobile-phone.webp
+      " />
+    <!--Tablet and above Image-->
+    <source
+      <source
       media="(max-width: 600px)"
-      srcset="../../assets/images/images/cash-cart-horizontal.jpg" />
+      srcset="../../assets/images/images/cash-cart-horizontal-mobile.webp" />
     <!--Tablet and above Image-->
     <source
       media="(min-width: 601px)"
-      srcset="../../assets/images/images/cash-cart-horizontal.jpg" />
+      srcset="../../assets/images/images/cash-cart-horizontal.webp" />
     <img
       decoding="async"
       src="../../assets/images/images/cash-cart-horizontal.jpg"
@@ -68,7 +76,7 @@
             {% endif %}
           </div>
           <div class="cs-details">
-            <h3 class="cs-product">{{ product.title }}</h3>
+            <h2 class="cs-product">{{ product.title }}</h2>
             <div class="cs-wrapper">
               <div class="cs-flex">
                 <span class="cs-price">{{ product.price }}</span>

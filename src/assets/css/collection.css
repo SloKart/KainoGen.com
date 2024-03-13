@@ -171,7 +171,10 @@
   #collection .cs-item {
     max-width: 18.5rem;
     padding: 1rem;
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--secondary);
+  }
+  #collection .cs-item:hover {
+    border: 2px solid var(--primaryLight);
   }
   #collection .cs-item:hover .cs-picture img {
     transform: scale(1.05);
@@ -208,7 +211,7 @@
     text-transform: uppercase;
     letter-spacing: 1.3px;
     padding: 0.375rem;
-    color: #fff;
+    color: black;
     background: #ff4747;
     position: absolute;
     top: 0.75rem;
@@ -264,16 +267,16 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #collection .cs-offer {
-    color: var(--bodyTextColorWhite);
+    color: var(--dark);
   }
   body.dark-mode #collection .cs-product {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #collection .cs-price {
-    color: var(--bodyTextColorWhite);
+    color: var(--primaryLight);
   }
   body.dark-mode #collection .cs-old-price {
-    color: var(--bodyTextColorWhite);
+    color: var(--secondaryLight);
   }
   body.dark-mode #collection .cs-item:hover .cs-picture {
     background-color: rgba(255, 255, 255, 0.2);

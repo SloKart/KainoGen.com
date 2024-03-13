@@ -220,8 +220,10 @@
     .cs-item {
       max-width: 18.5rem;
       padding: 1rem;
-      border: 1px solid #e8e8e8;
+      
+      border: 1px solid var(--secondary);
       &:hover {
+        border: 2px solid var(--primaryLight);
         .cs-picture {
           img {
             transform: scale(1.05);
@@ -265,7 +267,7 @@
       text-transform: uppercase;
       letter-spacing: 1.3px;
       padding: 0.375rem;
-      color: #fff;
+      color: black;
       background: #ff4747;
       position: absolute;
       top: 0.75rem;
@@ -337,7 +339,7 @@
   body.dark-mode {
     #collection {
       .cs-offer {
-        color: var(--bodyTextColorWhite);
+        color: var(--dark);
       }
 
       .cs-product {
@@ -345,11 +347,11 @@
       }
 
       .cs-price {
-        color: var(--bodyTextColorWhite);
+        color: var(--primaryLight);
       }
 
       .cs-old-price {
-        color: var(--bodyTextColorWhite);
+        color: var(--secondaryLight);
       }
 
       .cs-item {

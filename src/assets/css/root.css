@@ -930,6 +930,9 @@
   #footer-1390 .cs-social-li {
     list-style: none;
   }
+  #footer-1390 .inactive {
+    display: none;
+  }
   #footer-1390 .cs-social-link {
     width: 2rem;
     height: 2rem;

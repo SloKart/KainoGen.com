@@ -20,7 +20,7 @@ eleventyNavigation:
     <span class="cs-int-title">Who we are</span>
     <div class="cs-breadcrumbs">
       <a href="/" class="cs-link">Home</a>
-      <a class="cs-link">About</a>
+      <a role="presentation" class="cs-link">About</a>
       <a href="/about" class="cs-link cs-active">Our Blog</a>
     </div>
   </div>
@@ -28,26 +28,26 @@ eleventyNavigation:
   <picture class="cs-background">
     <!--Mobile Image-->
     <source
+      media="(max-width: 300px)"
+      srcset="../../assets/images/images/winning-mobile-phone.webp" />
+    <!--Tablet and above Image-->
+    <source
+      <source
       media="(max-width: 600px)"
-      srcset="
-        ../../assets/images/images/business-meeting.webp
-      " />
+      srcset="../../assets/images/images/winning-mobile.webp" />
     <!--Tablet and above Image-->
     <source
       media="(min-width: 601px)"
-      srcset="
-        ../../assets/images/images/business-meeting.webp
-      " />
+      srcset="../../assets/images/images/winning.webp" />
     <img
       decoding="async"
-      src="../../assets/images/images/business-meeting.webp"
-      alt="people laughing"
+      src="../../assets/images/images/winning.jpg"
+      alt="people smiling"
       width="1280"
       height="568"
       aria-hidden="true" />
   </picture>
 </div>
-
 
 <!-- ============================================ -->
 <!--                  Services                    -->
@@ -55,35 +55,17 @@ eleventyNavigation:
 
 <section id="services-564">
   <div class="cs-container">
-    <picture class="cs-picture">
-      <!--Mobile Image-->
-      <source
-        media="(max-width: 600px)"
-        srcset="
-          https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/computer-m.jpg
-        " />
-      <!--Tablet and above Image-->
-      <source
-        media="(min-width: 601px)"
-        srcset="
-          https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/computer.jpg
-        " />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/computer.jpg"
-        alt="computer"
-        width="630"
-        height="528"
-        aria-hidden="true" />
-    </picture>
     <div class="cs-content">
       <span class="cs-topper">Explore Our Work</span>
       <h2 class="cs-title">Browse Our Sample Projects</h2>
-      <div class="cs-h3">Designed with Expertise and  <span class="cs-color">Credibility</span></div>
-     
-      <p class="cs-text">Discover the quality and creativity of our past projects. Each sample showcases our dedication to excellence in web design and development.</p>
-      <ul class="cs-ul">
+      <div class="cs-h3">
+        Designed with Expertise and <span class="cs-color">Credibility</span>
+      </div>
+
+      <p class="cs-text">
+        Discover the quality and creativity of our past projects. Each sample
+        showcases our dedication to excellence in web design and development.
+      </p>
       <ul class="cs-ul">
         <li class="cs-li">
           <img
@@ -122,9 +104,32 @@ eleventyNavigation:
           <a href="/shop" class="cs-button-solid">go to the Shop</a>
         </li>
       </ul>
-          <p class="cs-text">Get inspired by our work and envision your business's online potential.</p>
+      <p class="cs-text">
+        Get inspired by our work and envision your business's online potential.
+      </p>
       <a href="/services" class="cs-button-solid">See Our Services</a>
     </div>
+    <picture class="cs-picture">
+      <!--Mobile Image-->
+      <source
+        media="(max-width: 300px)"
+        srcset="../../assets/images/images/samples-s.webp" />
+      <source
+        media="(max-width: 600px)"
+        srcset="../../assets/images/images/samples-m.webp" />
+      <!--Tablet and above Image-->
+      <source
+        media="(min-width: 601px)"
+        srcset="../../assets/images/images/samples.webp" />
+      <img
+        loading="lazy"
+        decoding="async"
+        src="../../assets/images/images/samples.jpg"
+        alt="computer"
+        width="792"
+        height="528"
+        aria-hidden="true" />
+    </picture>
   </div>
 </section>
 

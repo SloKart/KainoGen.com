@@ -124,7 +124,7 @@
     position: relative;
   }
   #banner-1402 .cs-link.cs-active {
-    color: var(--primary);
+    color: var(--secondaryLight);
   }
   #banner-1402 .cs-background {
     width: 100%;

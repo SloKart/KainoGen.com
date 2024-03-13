@@ -1088,6 +1088,10 @@
       list-style: none;
     }
 
+    .inactive {
+      display: none;
+    }
+
     .cs-social-link {
       width: calc(32 / 16 * 1rem);
       height: calc(32 / 16 * 1rem);

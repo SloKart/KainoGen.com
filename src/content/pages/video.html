@@ -18,7 +18,7 @@ eleventyNavigation:
     <span class="cs-int-title">Who we are</span>
     <div class="cs-breadcrumbs">
       <a href="/" class="cs-link">Home</a>
-      <a class="cs-link">About</a>
+      <a role="presentation" class="cs-link">About</a>
       <a href="/lighthouse" class="cs-link cs-active">Google Lighthouse</a>
     </div>
   </div>
@@ -26,15 +26,18 @@ eleventyNavigation:
   <picture class="cs-background">
     <!--Mobile Image-->
     <source
+      media="(max-width: 300px)"
+      srcset="../../assets/images/images/lighthouse-mobile-phone.webp" />
+    <source
       media="(max-width: 600px)"
-      srcset="../../assets/images/images/lighthouse.webp" />
+      srcset="../../assets/images/images/lighthouse-mobile.webp" />
     <!--Tablet and above Image-->
     <source
       media="(min-width: 601px)"
       srcset="../../assets/images/images/lighthouse.webp" />
     <img
       decoding="async"
-      src="../../assets/images/images/lighthouse.webp"
+      src="../../assets/images/images/lighthouse.jpg"
       alt="people laughing"
       width="1280"
       height="568"
@@ -77,8 +80,6 @@ eleventyNavigation:
         title="What Is Google Lighthouse and How to Use It?"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
       </iframe>
-
-      
     </div>
     <a href="/"><button class="cs-button-solid">Home</button></a>
   </div>
