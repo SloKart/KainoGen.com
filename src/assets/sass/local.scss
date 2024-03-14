@@ -442,6 +442,7 @@
 
     .cs-text {
       padding: 0.5rem;
+      color: var(--bodyTextColorWhite);
     }
 
     .cs-background {
@@ -492,6 +493,15 @@
           rgba(0, 0, 0, 0) 100%
         );
       }
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    .cs-text {
+      color: var(--bodyTextColorWhite);
     }
   }
 }

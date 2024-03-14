@@ -382,6 +382,7 @@
   }
   #banner-712 .cs-text {
     padding: 0.5rem;
+    color: var(--bodyTextColorWhite);
   }
   #banner-712 .cs-background {
     width: 100%;
@@ -420,6 +421,12 @@
   #banner-712 .cs-background:before {
     opacity: 1;
     background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.9) 16.86%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode .cs-text {
+    color: var(--bodyTextColorWhite);
   }
 }
 /*-- -------------------------- -->

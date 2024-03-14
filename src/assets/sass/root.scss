@@ -95,7 +95,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 calc(24 / 16 * 1rem);
-    color: #1a1a1a;
+    color: var(--secondary);
     background-color: var(--primary);
     display: inline-block;
     position: relative;
@@ -106,7 +106,7 @@
       content: "";
       width: 0%;
       height: 100%;
-      background: #000;
+      background: var(--secondaryLight);
       opacity: 0.95;
       position: absolute;
       top: 0;
@@ -116,7 +116,7 @@
     }
 
     &:hover {
-      color: #fff;
+      color: var(--primary);
       &:before {
         width: 100%;
       }
@@ -1039,6 +1039,8 @@
     }
 
     .cs-link {
+      min-height: 48px;
+      min-width: 48px;
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
