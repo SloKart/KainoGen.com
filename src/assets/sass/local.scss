@@ -144,7 +144,7 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       margin-bottom: calc(4 / 16 * 1rem);
-      color: var(--primary);
+      color: var(--secondary);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -700,6 +700,9 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #services-1081 {
+      .cs-link {
+        color: var(--primaryLight);
+      }
       .cs-topper {
         color: var(--primaryLight);
       }
@@ -1337,6 +1340,15 @@
       .cs-box {
         background-color: var(--medium);
       }
+    }
+  }
+}
+
+body.dark-mode {
+  .cs-link .cs-item {
+    color: var(--secondary);
+    &:hover {
+      color: var(--secondaryLight);
     }
   }
 }

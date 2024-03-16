@@ -133,7 +133,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.25rem;
-    color: var(--primary);
+    color: var(--secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -596,6 +596,9 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services-1081 {
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  body.dark-mode #services-1081 .cs-link {
+    color: var(--primaryLight);
   }
   body.dark-mode #services-1081 .cs-topper {
     color: var(--primaryLight);
@@ -1138,6 +1141,12 @@
   body.dark-mode #sbsr-1309 .cs-box {
     background-color: var(--medium);
   }
+}
+body.dark-mode .cs-link .cs-item {
+  color: var(--secondary);
+}
+body.dark-mode .cs-link .cs-item:hover {
+  color: var(--secondaryLight);
 }
 
 /*# sourceMappingURL=local.css.map */
