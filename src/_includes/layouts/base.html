@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="/assets/css/dark.css" />
 
     <!-- Sitewide Scripts -->
-    <script src="/assets/js/app.js" defer></script>
+    
 
     <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
     {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be
@@ -71,7 +71,7 @@
     {% include "components/footer.html" %}
 
     <!-- Shopify Scripts -->
-    <script>
+    <script defer>
       window.shopify = window.shopify || {};
       window.shopify.auth = {
         store_url: "{{ shopAuth.store_url }}",
