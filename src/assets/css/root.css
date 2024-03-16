@@ -897,10 +897,12 @@
     margin: 0;
     color: #bababa;
     display: block;
-    transition: color 0.3s;
+    transition: filter 0.3s, text-shadow 0.3s; /* Transition , filter, and text-shadow properties */
   }
   #footer-1390 .cs-link:hover {
-    color: var(--primary);
+    color: var(--primary); /* Change color on hover */
+    filter: brightness(1.5); /* Increase brightness on hover */
+    text-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary), 0 0 15px var(--primary); /* Add glowing effect on hover */
   }
   #footer-1390 .cs-logo {
     width: 100%;
@@ -971,11 +973,12 @@
     font-size: 1rem;
     text-decoration: none;
     color: #bababa;
-    transition: color 0.3s;
+    transition: filter 0.3s, text-shadow 0.3s; /* Transition both filter and text-shadow properties */
   }
   #footer-1390 .cs-copyright-link:hover,
   #footer-1390 .cs-separater:hover {
-    color: var(--primary);
+    filter: brightness(1.2); /* Increase brightness on hover */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; /* Add glowing effect */
   }
   #footer-1390 .cs-separater {
     margin: 0 1rem;

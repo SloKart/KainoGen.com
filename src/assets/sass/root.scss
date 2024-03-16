@@ -1048,11 +1048,14 @@
       margin: 0;
       color: #bababa;
       display: block;
-      transition: color 0.3s;
+      transition: filter 0.3s, text-shadow 0.3s; /* Transition , filter, and text-shadow properties */
+    }
 
-      &:hover {
-        color: var(--primary);
-      }
+    .cs-link:hover {
+      color: var(--primary); /* Change color on hover */
+      filter: brightness(1.5); /* Increase brightness on hover */
+      text-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary),
+        0 0 15px var(--primary); /* Add glowing effect on hover */
     }
 
     .cs-logo {
@@ -1134,11 +1137,13 @@
       font-size: calc(16 / 16 * 1rem);
       text-decoration: none;
       color: #bababa;
-      transition: color 0.3s;
+      transition: filter 0.3s, text-shadow 0.3s; /* Transition both filter and text-shadow properties */
+    }
 
-      &:hover {
-        color: var(--primary);
-      }
+    .cs-copyright-link:hover,
+    .cs-separater:hover {
+      filter: brightness(1.2); /* Increase brightness on hover */
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; /* Add glowing effect */
     }
 
     .cs-separater {

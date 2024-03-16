@@ -55,17 +55,6 @@
     <!-- Sitewide Scripts -->
     <script src="/assets/js/app.js" defer></script>
 
-    <!-- Shopify Scripts -->
-    <script>
-      window.shopify = window.shopify || {};
-      window.shopify.auth = {
-        store_url: "{{ shopAuth.store_url }}",
-        access_token: "{{ shopAuth.access_token }}",
-        api_version: "{{ shopAuth.api_version }}",
-      };
-    </script>
-
-    <script src="/assets/js/shopify.js" defer></script>
     <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
     {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be
     done manually from the pages head block. This is so responsive preloads can
@@ -80,5 +69,17 @@
     {% include "components/header.html" %}
     <main id="main">{% block body %}{% endblock %}</main>
     {% include "components/footer.html" %}
+
+    <!-- Shopify Scripts -->
+    <script>
+      window.shopify = window.shopify || {};
+      window.shopify.auth = {
+        store_url: "{{ shopAuth.store_url }}",
+        access_token: "{{ shopAuth.access_token }}",
+        api_version: "{{ shopAuth.api_version }}",
+      };
+    </script>
+
+    <script src="/assets/js/shopify.js" defer></script>
   </body>
 </html>
