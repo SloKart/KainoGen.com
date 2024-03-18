@@ -1,6 +1,7 @@
 // Plugin Imports
 const pluginDirectoryOutput = require("@11ty/eleventy-plugin-directory-output");
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
+const pluginPWA = require("eleventy-plugin-pwa-v2");
 
 // Filter Imports
 const filterFormatDate = require("./src/config/filters/formatDate");
@@ -31,6 +32,26 @@ module.exports = function (eleventyConfig) {
    *      Adds additional eleventy functionality through official or community-created add-ons
    *      https://www.11ty.dev/docs/plugins/
    */
+
+  eleventyConfig.addPlugin(pluginPWA); // eleventy-plugin-pwa-v2
+  eleventyConfig.addPlugin(pluginPWA, {
+    cacheId: "plugin-v2-demo",
+    runtimeCaching: [
+      {
+        urlPattern: /\/$/,
+        handler: "NetworkFirst",
+      },
+      {
+        urlPattern: /\.html$/,
+        handler: "NetworkFirst",
+      },
+      {
+        urlPattern:
+          /^.*\.(jpg|png|mp4|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
+        handler: "StaleWhileRevalidate",
+      },
+    ],
+  });
 
   // Provides benchmarks in the terminal when a website is built. Useful for diagnostics.
   // https://www.11ty.dev/docs/plugins/directory-output/
@@ -73,8 +94,6 @@ module.exports = function (eleventyConfig) {
    *      Allows modification of data before it is outputted, denoted by {{ contentToPrint | filterName }}
    *          https://www.11ty.dev/docs/filters/
    */
-
- 
 
   // Turns a date from ISO format to a more human-readable one
   eleventyConfig.addFilter("formatDate", filterFormatDate);
