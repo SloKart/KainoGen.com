@@ -17,7 +17,6 @@ const configImage = require("./src/config/plugins/image");
 const configCss = require("./src/config/eleventy/css");
 const configJs = require("./src/config/eleventy/javascript");
 
-
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 const pluginShopify = require("eleventy-plugin-shopify");
 
@@ -34,7 +33,25 @@ module.exports = function (eleventyConfig) {
    *      https://www.11ty.dev/docs/plugins/
    */
 
-  eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginPWA); // eleventy-plugin-pwa-v2
+  eleventyConfig.addPlugin(pluginPWA, {
+    cacheId: "plugin-v2-demo",
+    runtimeCaching: [
+      {
+        urlPattern: /\/$/,
+        handler: "NetworkFirst",
+      },
+      {
+        urlPattern: /\.html$/,
+        handler: "NetworkFirst",
+      },
+      {
+        urlPattern:
+          /^.*\.(jpg|png|mp4|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
+        handler: "StaleWhileRevalidate",
+      },
+    ],
+  });
 
   // Provides benchmarks in the terminal when a website is built. Useful for diagnostics.
   // https://www.11ty.dev/docs/plugins/directory-output/
