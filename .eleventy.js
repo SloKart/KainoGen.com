@@ -16,7 +16,7 @@ const configCritical = require("./src/config/plugins/critical");
 const configImage = require("./src/config/plugins/image");
 const configCss = require("./src/config/eleventy/css");
 const configJs = require("./src/config/eleventy/javascript");
-const configPwa = require("./src/config/plugins/eleventy-plugin-pwa-v2");
+
 
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 const pluginShopify = require("eleventy-plugin-shopify");
