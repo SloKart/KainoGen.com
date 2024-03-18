@@ -45,6 +45,8 @@
     <meta property="og:image:width" content="1421" />
     <meta property="og:image:height" content="180" />
 
+    <link rel="manifest" href="/manifest.json" />
+
     <!-- Helps prevent duplicate content issues -->
     <link rel="canonical" href="{{ client.domain }}{{ page.url }}" />
 
@@ -53,9 +55,31 @@
     <link rel="stylesheet" href="/assets/css/dark.css" />
 
     <!-- Sitewide Scripts -->
-     <script src="/assets/js/app.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
 
-   
+    <!-- Service Worker -->
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((registration) => {
+        registration.addEventListener("updatefound", () => {
+          const newWorker = registration.installing;
+          newWorker.addEventListener("statechange", () => {
+            if (newWorker.state === "installed") {
+              if (navigator.serviceWorker.controller) {
+                // New service worker installed and registered, we reload the page
+                window.location.reload();
+              }
+            }
+          });
+        });
+      })
+      .catch((error) => {
+        console.error("Service Worker registration failed:", error);
+      });
+  }
+</script>
 
     <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
     {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be
@@ -73,7 +97,7 @@
     {% include "components/footer.html" %}
 
     <!-- Shopify Scripts -->
-     <script defer>
+    <script defer>
       window.shopify = window.shopify || {};
       window.shopify.auth = {
         store_url: "{{ shopAuth.store_url }}",
