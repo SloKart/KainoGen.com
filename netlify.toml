@@ -7,9 +7,20 @@ package = "@netlify/plugin-lighthouse"
 
 [[plugins]]
 package = "netlify-plugin-cache"
-
   [plugins.inputs]
   paths = [
     "public/assets/images",
     ".cache"
   ]
+
+[[plugins]]
+package = "netlify-plugin-workbox"
+
+  [plugins.inputs]
+  workboxPluginMode = "GenerateSW"
+  workboxOptions = """
+    {
+      "exclude": [/\.map$/, /netlify.toml/]
+      // Other Workbox options...
+    }
+  """
