@@ -37,7 +37,8 @@ module.exports = function (eleventyConfig) {
 
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginPWA, {
-      cacheId: "Kainogen", // change this to your application id
+      exclude: [/\.map$/, /_redirects/],
+      cacheId: "/", // change this to your application id
       globIgnores: [
         // any files you don't want service worker to cache go here
         "share-*.jpg",
