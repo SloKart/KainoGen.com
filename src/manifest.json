@@ -3,7 +3,7 @@
   "lang": "en-US",
   "short_name": "KainoGen",
   "description": "Kainogen",
-  "start_url": "/",
+  "start_url": "https://kainogen.com/",
   "scope": "./",
   "display": "standalone",
   "theme_color": "#eeb24a",
