@@ -51,28 +51,12 @@
     <link rel="canonical" href="{{ client.domain }}{{ page.url }}" />
 
     <!-- Sitewide Stylesheets -->
+
     <link rel="stylesheet" href="/assets/css/root.css" />
     <link rel="stylesheet" href="/assets/css/dark.css" />
 
     <!-- Sitewide Scripts -->
     <script src="/assets/js/app.js" defer></script>
-
-    <link rel="manifest" href="/manifest.json" />
-
-    <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
-    {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be
-    done manually from the pages head block. This is so responsive preloads can
-    be achieved when using the optimization branch #} {#
-    https://web.dev/articles/preload-responsive-images #} {% block head %}{%
-    endblock %}
-
-    <!-- Uses the title directly from the frontmatter of the page -->
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    {% include "components/header.html" %}
-    <main id="main">{% block body %}{% endblock %}</main>
-    {% include "components/footer.html" %}
 
     <!-- Shopify Scripts -->
     <script defer>
@@ -83,8 +67,10 @@
         api_version: "{{ shopAuth.api_version }}",
       };
     </script>
-
     <script src="/assets/js/shopify.js" defer></script>
+
+    <link rel="manifest" href="/manifest.json" />
+
     <!-- Service Worker -->
     <script defer>
       if ("serviceWorker" in navigator) {
@@ -108,5 +94,20 @@
           });
       }
     </script>
+
+    <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
+    {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be
+    done manually from the pages head block. This is so responsive preloads can
+    be achieved when using the optimization branch #} {#
+    https://web.dev/articles/preload-responsive-images #} {% block head %}
+    {%endblock %}
+
+    <!-- Uses the title directly from the frontmatter of the page -->
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    {% include "components/header.html" %}
+    <main id="main">{% block body %}{% endblock %}</main>
+    {% include "components/footer.html" %}
   </body>
 </html>

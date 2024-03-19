@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
 
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginPWA, {
-      cacheId: "Kainogen.com", // change this to your application id
+      cacheId: "Kainogen", // change this to your application id
       globIgnores: [
         // any files you don't want service worker to cache go here
         "share-*.jpg",
@@ -123,7 +123,7 @@ module.exports = function (eleventyConfig) {
     "./src/assets/images/images/logo.png": "./logo.png",
   });
   eleventyConfig.addPassthroughCopy({
-    "./src/splash.png.": "./splash.png",
+    "./src/splash.png": "./splash.png",
   });
 
   /**
