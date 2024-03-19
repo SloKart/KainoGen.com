@@ -126,6 +126,10 @@ module.exports = function (eleventyConfig) {
     "./src/splash.png": "./splash.png",
   });
 
+  eleventyConfig.addPassthroughCopy({
+    "./src/favicon.ico": "./favicon.ico",
+  });
+
   /**
    *  EXTENSIONS
    *      Sets up non-template languages to be processed by eleventy, typically to allow other technologies process code at build.
