@@ -38,7 +38,7 @@ module.exports = function (eleventyConfig) {
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginPWA, {
       swDest: "./service-worker.js",
-      exclude: [/\.map$/, /_redirects/],
+
       cacheId: "/", // change this to your application id
       globIgnores: [
         // any files you don't want service worker to cache go here
