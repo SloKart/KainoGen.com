@@ -33,25 +33,35 @@ module.exports = function (eleventyConfig) {
    *      https://www.11ty.dev/docs/plugins/
    */
 
-// eleventy-plugin-pwa-v2
-  eleventyConfig.addPlugin(pluginPWA, {
-    cacheId: "plugin-v2-demo",
-    runtimeCaching: [
-      {
-        urlPattern: /\/$/,
-        handler: "NetworkFirst",
-      },
-      {
-        urlPattern: /\.html$/,
-        handler: "NetworkFirst",
-      },
-      {
-        urlPattern:
-          /^.*\.(jpg|png|mp4|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
-        handler: "StaleWhileRevalidate",
-      },
-    ],
-  });
+  // eleventy-plugin-pwa-v2
+
+  module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(pluginPWA, {
+      cacheId: "Kainogen.com", // change this to your application id
+      globIgnores: [
+        // any files you don't want service worker to cache go here
+        "share-*.jpg",
+      ],
+      runtimeCaching: [
+        {
+          // we always want fresh copy of the index page
+          urlPattern: /\/$/,
+          handler: "NetworkFirst",
+        },
+        {
+          // we also want fresh copies of any HTML page
+          urlPattern: /\.html$/,
+          handler: "NetworkFirst",
+        },
+        {
+          // we serve stale copies of static assets while they're refreshed
+          urlPattern:
+            /^.*\.(jpg|png|mp4|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
+          handler: "StaleWhileRevalidate",
+        },
+      ],
+    });
+  };
 
   // Provides benchmarks in the terminal when a website is built. Useful for diagnostics.
   // https://www.11ty.dev/docs/plugins/directory-output/
@@ -84,12 +94,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginShopify, configShopify);
 
   /**
-   *  PASSTHROUGH'S
-   *      Copy/paste non-template files straight to /public, without any interference from the eleventy engine
-   *      https://www.11ty.dev/docs/copy/
-   */
-
-  /**
    *  FILTERS
    *      Allows modification of data before it is outputted, denoted by {{ contentToPrint | filterName }}
    *          https://www.11ty.dev/docs/filters/
@@ -98,11 +102,29 @@ module.exports = function (eleventyConfig) {
   // Turns a date from ISO format to a more human-readable one
   eleventyConfig.addFilter("formatDate", filterFormatDate);
 
+  /**
+   *  PASSTHROUGH'S
+   *      Copy/paste non-template files straight to /public, without any interference from the eleventy engine
+   *      https://www.11ty.dev/docs/copy/
+   */
+
   eleventyConfig.addPassthroughCopy("./src/assets/favicons");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/svgs");
   eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addPassthroughCopy({
+    "./src/manifest.json": "./manifest.json",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./src/superLogo-xl.svg": "./superLogo-xl.svg",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./src/assets/images/images/logo.png": "./logo.png",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./src/splash.png.": "./splash.png",
+  });
 
   /**
    *  EXTENSIONS
