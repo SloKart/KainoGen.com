@@ -16,6 +16,7 @@ const configCritical = require("./src/config/plugins/critical");
 const configImage = require("./src/config/plugins/image");
 const configCss = require("./src/config/eleventy/css");
 const configJs = require("./src/config/eleventy/javascript");
+const configPWA = require("./src/config/plugins/pwa");
 
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 const pluginShopify = require("eleventy-plugin-shopify");
@@ -34,36 +35,7 @@ module.exports = function (eleventyConfig) {
    */
 
   // eleventy-plugin-pwa-v2
-
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(pluginPWA, {
-      swDest: "./service-worker.js",
-
-      cacheId: "/", // change this to your application id
-      globIgnores: [
-        // any files you don't want service worker to cache go here
-        "share-*.jpg",
-      ],
-      runtimeCaching: [
-        {
-          // we always want fresh copy of the index page
-          urlPattern: /\/$/,
-          handler: "NetworkFirst",
-        },
-        {
-          // we also want fresh copies of any HTML page
-          urlPattern: /\.html$/,
-          handler: "NetworkFirst",
-        },
-        {
-          // we serve stale copies of static assets while they're refreshed
-          urlPattern:
-            /^.*\.(jpg|png|mp4|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
-          handler: "StaleWhileRevalidate",
-        },
-      ],
-    });
-  };
+  eleventyConfig.addPlugin(pluginPWA, configPWA);
 
   // Provides benchmarks in the terminal when a website is built. Useful for diagnostics.
   // https://www.11ty.dev/docs/plugins/directory-output/

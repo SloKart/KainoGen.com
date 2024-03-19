@@ -58,12 +58,12 @@
     <!-- Sitewide Scripts -->
     <!-- Service Worker -->
 
- <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
 
-    <script>
+    <script async>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("/service-worker.js")
+          .register("./service-worker.js")
           .then((registration) => {
             registration.addEventListener("updatefound", () => {
               const newWorker = registration.installing;
@@ -83,7 +83,6 @@
       }
     </script>
 
-    
     <script src="/assets/js/app.js" defer></script>
 
     <!-- Shopify Scripts -->
@@ -97,7 +96,6 @@
     </script>
     <script src="/assets/js/shopify.js" defer></script>
 
-   
     <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
     {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be
     done manually from the pages head block. This is so responsive preloads can
