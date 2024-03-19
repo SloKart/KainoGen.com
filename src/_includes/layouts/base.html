@@ -94,7 +94,25 @@
         api_version: "{{ shopAuth.api_version }}",
       };
     </script>
-    <script src="/assets/js/shopify.js" defer></script>
+    <script>
+      // Function to dynamically load Shopify JavaScript
+      function loadShopifyScript() {
+        // Create a script element
+        var script = document.createElement("script");
+        // Set the source of the script to your Shopify JavaScript file
+        script.src = "/assets/js/shopify.js";
+        // Set the defer attribute to ensure it doesn't block rendering
+        script.defer = true;
+        // Append the script to the document's body
+        document.body.appendChild(script);
+      }
+
+      // Listen for the DOMContentLoaded event to ensure critical assets have loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Call the function to load Shopify JavaScript
+        loadShopifyScript();
+      });
+    </script>
 
     <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
     {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be
