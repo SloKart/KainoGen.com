@@ -13,7 +13,6 @@ module.exports = {
     //   "./src/assets/js/app.js",
     //   "./src/assets/js/prices.js",
     //   "./src/assets/js/shopify.js",
-    //   "*/service-worker.js",
     // ];
     // if (!filesToBundle.includes(inputPath)) return;
 
