@@ -1,0 +1,20 @@
+{
+  "name": "KainoGen.com",
+  "lang": "en-US",
+  "short_name": "KainoGen",
+  "description": "Kainogen",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/superLogo-xl",
+      "sizes": "512x512",
+      "type": "image/svg",
+      "purpose": "any"
+    }
+  ]
+}

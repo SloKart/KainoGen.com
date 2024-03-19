@@ -33,7 +33,7 @@ module.exports = function (eleventyConfig) {
    *      https://www.11ty.dev/docs/plugins/
    */
 
-  eleventyConfig.addPlugin(pluginPWA); // eleventy-plugin-pwa-v2
+// eleventy-plugin-pwa-v2
   eleventyConfig.addPlugin(pluginPWA, {
     cacheId: "plugin-v2-demo",
     runtimeCaching: [
